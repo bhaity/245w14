@@ -537,6 +537,12 @@
         <script>
             $(document).foundation();
             $(document).ready(function() {
+                $(".orbit-slides-container").mouseenter(function(){
+                  $(".orbit-prev, .orbit-next").stop().animate({'opacity':'1'}, 400);
+                }).mouseleave(function(){
+                  $(".orbit-prev, .orbit-next").stop().animate({'opacity':'0'}, 400);
+                });
+
                 $('.section-container .title').on('click', function() {
                     setTimeout(function() {
                         //console.log($('.section-container section.active .orbit-container ul').height());
