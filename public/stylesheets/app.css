@@ -7286,3 +7286,27 @@ body {
 #main-content #fact-sheet .content > ul > li > ul > li:before {
   content: "\2013 \0020";
 }
+
+.orbit-container .orbit-prev {
+    background-color: transparent !important;
+    background-image: url('../images/left_aarow.png') !important;
+    background-repeat: no-repeat !important;
+    width: 60px !important;
+    height: 60px !important;
+ 
+}
+
+.orbit-container .orbit-prev > span {
+     border:none !important;
+}
+
+.orbit-container .orbit-next {
+    background-color: transparent !important;
+    background-image: url('../images/right_aarow.png') !important;
+    background-repeat: no-repeat !important;
+    width: 60px !important;
+    height: 60px !important;
+}
+.orbit-container .orbit-next > span {
+     border:none !important;
+}
