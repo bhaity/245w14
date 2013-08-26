@@ -22,7 +22,7 @@
                     <img src="images/Logo.gif"/>
                 </div>
                 <div class="small-6 columns">
-                    <h2>The Art of Better Living</h2>
+                    <h2>MOBILE</h2>
                     <p>Another downtown landmark<br>
                         by <strong>alfa</strong> development &trade; and the<br>
                         Namer Organization</p>
@@ -538,8 +538,8 @@
             $(document).foundation();
             $(document).ready(function() {
                 //alert(document.location.pathname);
-              if (($(window).width() < 800) && (document.location.pathname == '/')) {
-                document.location = "/mobile";
+              if (($(window).width() > 800) && (document.location.pathname == '/mobile')) {
+                document.location = "/";
               }
    
 
