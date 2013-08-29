@@ -3828,7 +3828,9 @@ label.error {
 .section-container.accordion > section.active > .title,
 .section-container.accordion > .section.active > .title {
   background: #efe9e0;
+  border: solid 1px #cccccc;
 }
+
 /* line 233, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a,
 .section-container.vertical-tabs > section.active > .title a,
@@ -4131,7 +4133,7 @@ label.error {
   .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > .title {
     background-color: #efe9e0;
     cursor: pointer;
-    border: solid 1px #cccccc;
+    border: none;
   }
   /* line 211, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > .title a {
@@ -7299,6 +7301,7 @@ body {
 .orbit-container .orbit-prev > span {
      border:none !important;
 }
+
 
 .orbit-container .orbit-next {
     background-color: transparent !important;
