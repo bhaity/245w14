@@ -56,6 +56,35 @@ hr {
 .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > .title {
 }
 
+.section-container.vertical-tabs{
+  background-color:#efe9e0; 
+}
+
+.content{
+    border:0 !important;
+}
+
+#main-content .title{
+    padding-right:20px;
+    padding-left:20px;
+}
+
+#main-content .title a {
+    padding-top: 0;
+    padding-bottom:0;
+    color: #989484;
+}
+
+#main-content .active .title a{
+   color:black;
+}
+#main-content .title a:hover{    
+    color:black;
+}
+#main-content .title:hover{
+    background-color: inherit;
+}
+
 .head{
 	margin-bottom:10%;
 	font-family: 'ITC Century';
