@@ -169,7 +169,7 @@ hr {
 
 .cent.white-border{
     max-width:500px !important;
-    max-width:600px !important;
+    max-height:600px !important;
 }
 
 .orbit-constraint{
