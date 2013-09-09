@@ -1,3 +1,39 @@
+
+.section-container.accordion.map-accordion{
+    border:0;
+}
+
+.section-container.accordion.map-accordion > section > .title {
+    border:0px;
+   
+
+}
+
+.section-container.accordion.map-accordion > section > .title > a {
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+    padding-left:0px;
+    padding-right:0px;
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    font-size: 12pt !important;
+    color:grey !important;
+     
+}
+.section-container.accordion.map-accordion > section > .title > a:hover {
+    color:black !important;
+}
+.section-container.accordion.map-accordion > section.active > .title > a{
+      color:black !important;
+}
+.section-container.accordion.map-accordion > section > .content > ol > li {
+    font-size: 10pt !important;
+}
+
+.map{
+  max-height:500px;
+}
+
 hr {
 	border: solid #000000;
 	border-width: 1px 0 0;

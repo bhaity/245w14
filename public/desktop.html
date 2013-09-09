@@ -99,7 +99,13 @@
                             </div>
                         </section>
                         <section>
-                            <p class="title" data-section-title><a href="#">RESIDENCES</a></p>
+                            <p class="title" data-section-title>
+                                <a id="residences_link" href="#">RESIDENCES</a>
+                            </p>
+                            <span id="res_sublinks">
+                                <a id="kitchens_link" style="display:none;" href="nowhere"> &nbsp;&nbsp; > kitchens</a>
+                                <a id="bathrooms_link" style="display:none;" href="nowhere"> &nbsp;&nbsp; > bathrooms</a>
+                            </span>
                             <div class="content" data-section-content>
                                 <div class="head">
                                     Residences <hr>
@@ -178,11 +184,12 @@
                                     <li><img class="cent white-border" src="images/Neighborhood.jpg" /></li>
                                 </ul>
                                 <p>
-                                    One building at the heart of the crossroads of
-                                    the West Village, Chelsea and the Meatpacking
-                                    District, Village Green West could not be better
-                                    situated in terms of comfort, convenience, and
-                                    culture.
+                                    Originally known for its bohemian culture, the West Village today is a mecca for high-end retail and acclaimed
+restaurants while steps away, Chelsea and the Meatpacking District have transitioned from their industrial past to
+become home to Manhattan’s hottest galleries, shopping, and nightlife. Village Green West could not be better
+situated in terms of comfort, convenience, and culture. Whether shopping on Bleecker Street,strolling on the Highline,
+or gallery hopping in Chelsea on opening night, the best of New York City is always just steps from your front
+door.
                                 </p>
                             </div>
                         </section>
@@ -192,25 +199,90 @@
                                 <div class="head">
                                     Map <hr>
                                 </div>
-                                <img class="cent white-border" src='images/Map.jpg'>
-                                <div>
-                                    <h3>Selected Nearby Locations</h3>
-                                    <ul class='inline-list'>
-                                        <li>Apple Store</li>
-                                        <li>Alexander Mc-Queen</li>
-                                        <li>Burberry</li>
-                                        <li>The Highline</li>
-                                        <li>Kiehls</li>
-                                        <li>Pastis</li>
-                                        <li>Alison Eighteen</li>
-                                        <li>Cafe Cluny</li>
-                                        <li>Corner Bistro</li>
-                                        <li>Spice Market</li>
-                                        <li>Marc Jacobs</li>
-                                        <li>Chelsea Piers</li>
-                                        <li>Theory</li>
-                                        <li>Jeffrey</li>
-                                    </ul>
+                                <div class="row">
+                                  <div class="large-4 columns">
+                                    <div class="section-container accordion map-accordion" data-section="accordion">
+                                      <section>
+                                        <p class="title" data-section-title><a href="#" style="border-top:0!important;">SHOPPING</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Apple Store</li>
+                                            <li>Burberry</li>
+                                            <li>Commes des Garcons</li>
+                                            <li>Kiehls</li>
+                                            <li>Marc Jacobs</li>
+                                            <li>Diane von Furstenberg</li>
+                                            <li>Theory</li>
+                                            <li>Jeffrey</li>
+                                            <li>Alexander McQueen</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a href="#">FOOD & WINE<br/>MARKETS</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Barbuto</li>
+                                            <li>Del Posto</li>
+                                            <li>Morimoto</li>
+                                            <li>Pastis</li>
+                                            <li>Alison Eighteen</li>
+                                            <li>Cafe Cluny</li>
+                                            <li>Corner Bistro</li>
+                                            <li>Spice Market</li>
+                                            <li>Crispo</li>
+                                            <li>The Darby</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a href="#">OUTDOOR/<br/>RECREATIONAL/<br/>WELLNESS</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Chelsea Piers</li>
+                                            <li>The Highline</li>
+                                            <li>Integral Yoga</li>
+                                            <li>Hudson River Park</li>
+                                            <li>Bleecker Playground</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a href="#">NIGHTLIFE/HOTELS/<br/>ENTERTAINMENT</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Gansevoort</li>
+                                            <li>Maritime</li>
+                                            <li>SoHo House</li>
+                                            <li>Norwood Club</li>
+                                            <li>Highline Ballroom</li>
+                                            <li>The Standard</li>
+                                            <li>Joyce Theater</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a href="#">RESTAURANTS</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Barbuto</li>
+                                            <li>Del Posto</li>
+                                            <li>Morimoto</li>
+                                            <li>Pastis/li>
+                                            <li>Alison Eighteen</li>
+                                            <li>Cafe Cluny</li>
+                                            <li>Corner Bistro</li>
+                                            <li>Spice Market</li>
+                                            <li>Crispo</li>
+                                            <li>The Darby</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                    </div>
+                                  </div>
+                                  <div class="large-8 columns">
+                                    <img class="map white-border" src='images/Map.jpg'>
+                                  </div>
                                 </div>
                             </div>
                         </section>
@@ -628,7 +700,11 @@
             $(document).foundation();
             $(document).ready(function() {
                 //alert(document.location.pathname);
-              
+                $( "#residences_link" ).click(function() {
+                    $("#res_sublinks").slideDown("slow", function() {
+    
+                    });
+                });
    
 
                 $(".orbit-slides-container").mouseenter(function(){
