@@ -1,3 +1,30 @@
+body{
+    font-family: ITC Century !important;
+}
+
+h4{
+  font-family: ITC Century !important;  
+  margin-bottom:10px;
+  font-size: 14pt;
+}
+
+.availabilities_table{
+    width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    background: transparent;
+    border:0;
+}
+.availabilities_table tr:first-child{
+    font-weight: bold;
+}
+.availabilities_table tr:not(:first-child):hover{
+    background:white !important;
+    cursor:pointer;
+}
+table.availabilities_table tr:nth-of-type(even) {
+    background: transparent;
+}
 
 .section-container.accordion.map-accordion{
     border:0;
@@ -5,8 +32,6 @@
 
 .section-container.accordion.map-accordion > section > .title {
     border:0px;
-   
-
 }
 
 .section-container.accordion.map-accordion > section > .title > a {
@@ -122,8 +147,8 @@ hr {
 }
 
 .head{
-	margin-bottom:10%;
-	font-family: 'ITC Century';
+	margin-bottom:50px;
+	font-family: ITC Century;
 	font-style: italic;
 	font-size: 24pt;
 }
@@ -136,6 +161,10 @@ hr {
 	margin-left:auto;
 	margin-right:auto;
 	
+}
+
+.cent.white-border{
+    max-width:500px !important;
 }
 
 .orbit-constraint{
