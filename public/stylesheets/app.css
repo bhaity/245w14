@@ -453,12 +453,7 @@ a:focus {
 }
 
 /* line 293, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
-img,
-object,
-embed {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* line 296, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
 object,
@@ -3488,7 +3483,7 @@ label.error {
   width: 100%;
   position: relative;
   display: block;
-  margin-bottom: 1.25em;
+  //margin-bottom: 1.25em;
 }
 /* line 55, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 [data-section=''][data-section-small-style], [data-section='auto'][data-section-small-style], .section-container.auto[data-section-small-style],
@@ -5306,7 +5301,7 @@ label.error {
   background: #999999;
   float: left;
   margin-right: 6px;
-  border: solid 1px #555555;
+  //border: solid 1px #555555;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
 }
@@ -7226,19 +7221,19 @@ body {
 }
 
 /* line 62, ../sass/app.scss */
-#main-content .orbit-bullets {
+/*#main-content .orbit-bullets {
   position: absolute;
   right: 10px;
   top: 18px;
-}
+}*/
 /* line 66, ../sass/app.scss */
-#main-content .orbit-bullets li {
+/*#main-content .orbit-bullets li {
   border: none;
   width: 24px;
   height: 24px;
   margin-right: 15px;
   background: #989484;
-}
+}*/
 /* line 72, ../sass/app.scss */
 #main-content .orbit-bullets li.active {
   background: #E2927E;

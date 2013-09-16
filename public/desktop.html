@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="stylesheets/app.css">
         <link rel="stylesheet" href="stylesheets/desktop.css">
-
+        <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/9c63ad8b-0542-46ff-9c1d-b98c849ab9eb.css"/>
         <link href="javascripts/lightbox/css/lightbox.css" rel="stylesheet" />
 
 
@@ -32,12 +32,12 @@
         <section id='main-content'>
             <div class="row">
                 <div class="small-12 columns">
-                    <div style="padding:20px">
+                    <div class="everything">
                       <div class="section-container vertical-tabs" data-section="vertical-tabs">
                         <section>
                             <div data-section-title class="title">
                                 <br/>
-                                <img class="cent" src="images/Logo.gif"/>
+                                <img style="max-width:180px;" class="cent" src="images/Logo.gif"/>
                                 <br/>
                                 <br/>
                                 <br/>
@@ -47,7 +47,7 @@
                                 <div class="head">
                                     The Building <hr>
                                 </div>
-                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                <ul data-orbit data-options="timer:false;slide_number:true;bullets:true;">
                                     <li>
                                         <a href="images/Hero.jpg" data-lightbox="building1">
                                           <img class="cent white-border" src="images/Hero.jpg" />
@@ -100,15 +100,49 @@
                         </section>
                         <section>
                             <p class="title" data-section-title>
-                                <a id="residences_link" href="#">RESIDENCES</a>
+                                <a id="residences_link" class="parent-nav" href="#">RESIDENCES</a>
+                                <!-- <a id="kitchens_link"  class="child-nav" href="nowhere"> &nbsp;&nbsp; > kitchens</a>
+                                <a id="bathrooms_link" class="child-nav" href="nowhere"> &nbsp;&nbsp; > bathrooms</a> -->
                             </p>
-                            <span id="res_sublinks">
-                                <a id="kitchens_link" style="display:none;" href="nowhere"> &nbsp;&nbsp; > kitchens</a>
-                                <a id="bathrooms_link" style="display:none;" href="nowhere"> &nbsp;&nbsp; > bathrooms</a>
-                            </span>
+                                
                             <div class="content" data-section-content>
+                              <div class="section-container tabs" data-section="tabs">
+                              <section>
+                               <p class="title res_subtitle" data-section-title><a href="#">KITCHENS</a></p>
+                                <div class="content">
                                 <div class="head">
-                                    Residences <hr>
+                                    Kitchens <hr> <br/>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences2">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences2">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences2">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
+are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixtures with in-line water filtration
+are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
+home cooking and entertaining.
+                                </p>
+                               </div>
+                               </section>
+                               <section>
+                                <p class="title res_subtitle" data-section-title><a href="#">BATHROOMS</a></p>
+                                <div class="content">
+                                <div class="head">
+                                    Bathrooms <hr> <br/>
                                 </div>
                                 <ul data-orbit data-options="timer:false;slide_number:false;">
                                     <li>
@@ -133,6 +167,10 @@ are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixt
 are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
 home cooking and entertaining.
                                 </p>
+                               </div>
+                               </section>
+                               </div>
+
                             </div>
                         </section>
                         <section>
@@ -204,7 +242,7 @@ door.
                                   <div class="large-4 columns">
                                     <div class="section-container accordion map-accordion" data-section="accordion">
                                       <section>
-                                        <p class="title" data-section-title><a href="#" style="border-top:0!important;">SHOPPING</a></p>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#" style="border-top:0!important;">SHOPPING</a></p>
                                         <div class="content" data-section-content>
                                           <p><ol>
                                             <li>Apple Store</li>
@@ -220,7 +258,7 @@ door.
                                         </div>
                                       </section>
                                       <section>
-                                        <p class="title" data-section-title><a href="#">FOOD & WINE<br/>MARKETS</a></p>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#">FOOD & WINE<br/>MARKETS</a></p>
                                         <div class="content" data-section-content>
                                           <p><ol>
                                             <li>Barbuto</li>
@@ -237,7 +275,7 @@ door.
                                         </div>
                                       </section>
                                       <section>
-                                        <p class="title" data-section-title><a href="#">OUTDOOR/<br/>RECREATIONAL/<br/>WELLNESS</a></p>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#">OUTDOOR/<br/>RECREATIONAL/<br/>WELLNESS</a></p>
                                         <div class="content" data-section-content>
                                           <p><ol>
                                             <li>Chelsea Piers</li>
@@ -249,7 +287,7 @@ door.
                                         </div>
                                       </section>
                                       <section>
-                                        <p class="title" data-section-title><a href="#">NIGHTLIFE/HOTELS/<br/>ENTERTAINMENT</a></p>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#">NIGHTLIFE/HOTELS/<br/>ENTERTAINMENT</a></p>
                                         <div class="content" data-section-content>
                                           <p><ol>
                                             <li>Gansevoort</li>
@@ -263,7 +301,7 @@ door.
                                         </div>
                                       </section>
                                       <section>
-                                        <p class="title" data-section-title><a href="#" style="border-bottom:2px solid black;">RESTAURANTS</a></p>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#" style="border-bottom:2px solid black;">RESTAURANTS</a></p>
                                         <div class="content" data-section-content>
                                           <p><ol>
                                             <li>Barbuto</li>
@@ -523,12 +561,23 @@ door.
                                     Press <hr>
                                 </div>
                                 <div class="row" style="text-align:center;">
-                                    <img class="cent white-border" src='images/Forbes.jpg' />
-                                    <p>Ultimage Kitchens For The Holidays 11/21/2012</p>
-                                    <img class="cent white-border" src='images/New_York_Magazine.jpg' />
-                                    <p>Condo Madness Returns 11/05/2012</p>
-                                    <img class="cent white-border" src='images/New_York_Times.jpg' />
-                                    <p>The Take-It-on-Faith Condo 11/18/2012</p>
+                                    <p>
+                                      <span class="press-span">
+                                        <img class="cent white-border" src='images/Forbes.jpg' /><br/>
+                                        Ultimage Kitchens For The Holidays 11/21/2012
+                                      </span>
+                                    </p>
+                                    <p>
+                                      <span class="press-span">
+                                        <img class="cent white-border" src='images/New_York_Magazine.jpg' /><br/>
+                                        Condo Madness Returns 11/05/2012
+                                   </p>
+                                   <p>
+                                    <span class="press-span">
+                                      <img class="cent white-border" src='images/New_York_Times.jpg' /><br/>
+                                      The Take-It-on-Faith Condo 11/18/2012
+                                    </span>
+                                   </p>
                                 </div>
                             </div>
                         </section>
@@ -536,10 +585,13 @@ door.
                             <p class="title" data-section-title><a style="font-size:12pt;" href="#">Contact</a></p>
                             <div class="content" data-section-content>
                                 <div class="head">
-                                    Contact <hr><br/><br/>
+                                    Contact <hr>
                                 </div>
-                                <h3>Village Green West Sales Gallery</h3>
-                            <p>
+                               <p style="text-align:center;">
+                                <img class="cent white-border" src='images/Residences.jpg'/><br/>
+                               </p>
+                                <h4>VILLAGE GREEN WEST SALES GALLERY</h4>
+                            <p style="font-size:10pt;">
                                 130 West 18th St.<br>
                                 New York, NY 10011<br>
                                 <br>
@@ -552,7 +604,7 @@ door.
                             <p class="title" data-section-title><a style="font-size:12pt;" href="#">Register</a></p>
                             <div class="content" data-section-content>
                                 <div class="head">
-                                    Register <hr><br/><br/>
+                                    Register <hr>
                                 </div>
                                 <form class='custom'>
                                   <div class="row">
@@ -647,7 +699,7 @@ door.
                             <p class="title" data-section-title><a style="font-size:12pt;" href="#">Legal</a></p>
                             <div class="content" data-section-content>
                                 <div class="head">
-                                    Legal <hr><br/><br/>
+                                    Legal <hr>
                                 </div>
                             <p> 
                                 THE COMPLETE OFFERING TERMS ARE IN AN OFFERING PLAN AVAILABLE FROM THE SPONSOR. FILE NO. CD11-0177. SPONSOR:
@@ -715,6 +767,42 @@ door.
         <script>
             $(document).foundation();
             $(document).ready(function() {
+
+                // function windowHeight() {
+                //     var myHeight = 0;
+                //     if( typeof( window.innerWidth ) == 'number' ) {
+                //         //Non-IE
+                //         myHeight = window.innerHeight;
+                //     } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+                //         //IE 6+ in 'standards compliant mode'
+                //         myHeight = document.documentElement.clientHeight;
+                //     } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+                //         //IE 4 compatible
+                //         myHeight = document.body.clientHeight;
+                //     }
+                //       return myHeight;
+                // }
+
+                // var h = windowHeight();
+                // $("").css("height", h);
+
+
+
+
+
+
+                $(".parent-nav").click(function(event){
+                    $(event.currentTarget).parent().find('.child-nav').toggle();
+                });
+
+                $(".close-accordion-hack").click(function(event){
+                    if($(event.currentTarget).parent().parent().hasClass('active')){
+
+                     window.setTimeout(function(){
+                        $(event.currentTarget).parent().parent().removeClass('active')
+                     }, 100);
+                    }
+                });
                 //alert(document.location.pathname);
                 $( "#residences_link" ).click(function() {
                     $("#res_sublinks").slideDown("slow", function() {

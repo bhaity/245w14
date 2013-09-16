@@ -1,9 +1,33 @@
+html{
+    min-height:100%;
+}
+
+
 body{
-    font-family: ITC Century !important;
+    font-family: Arial !important;
+    height:;
+    /*font-family: Arial !important;
+    font-size: 10pt;*/
+}
+
+.everything{
+
+}
+
+#main-content{
+    height:100%;
+}
+
+.section-container.vertical-tabs {
+    margin: 0 !important;
+}
+
+.section-container.vertical-tabs p.title a{
+  font-family: ITC Century W01 Book !important; 
 }
 
 h4{
-  font-family: ITC Century !important;  
+  font-family: ITC Century W01 Book !important;  
   margin-bottom:10px;
   font-size: 14pt;
 }
@@ -14,6 +38,11 @@ h4{
     margin-left: auto;
     background: transparent;
     border:0;
+}
+
+.availabilities_table a{
+    color:black;
+    text-decoration: underline;
 }
 .availabilities_table tr:first-child{
     font-weight: bold;
@@ -26,6 +55,10 @@ table.availabilities_table tr:nth-of-type(even) {
     background: transparent;
 }
 
+.press-span{
+    display:inline-block; 
+    text-align:left;
+}
 .section-container.accordion.map-accordion{
     border:0;
 }
@@ -42,7 +75,7 @@ table.availabilities_table tr:nth-of-type(even) {
     border-bottom:1px solid black;
     border-top:1px solid black;
     font-size: 12pt !important;
-    color:grey !important;
+    color:#989484 !important;
      
 }
 .section-container.accordion.map-accordion > section > .title > a:hover {
@@ -67,13 +100,16 @@ hr {
     display: block;
     height: 0;
 }
-
 .orbit-bullets{
+    float:right;
+
+}
+/*.orbit-bullets{
         position: absolute;
         right: 10px;
         top: 800px !important;
 }
-
+*/
 #main-content .orbit-container{
     margin-bottom:-50px;
 }
@@ -129,7 +165,7 @@ hr {
     border:0 !important;
 }
 
-#main-content .title{
+#main-content .title:not(.res_subtitle){
     padding-right:20px;
     padding-left:20px;
 }
@@ -152,8 +188,7 @@ hr {
 
 .head{
 	margin-bottom:50px;
-	font-family: ITC Century;
-	font-style: italic;
+	font-family: ITCCenturyW01-BookItali;
 	font-size: 24pt;
 }
 
@@ -169,7 +204,7 @@ hr {
 
 .cent.white-border{
     max-width:500px !important;
-    max-height:600px !important;
+    max-height: 500px !important;
 }
 
 .orbit-constraint{
@@ -179,7 +214,7 @@ hr {
 	max-width:400px;
 }
 
-.orbit-bullets{
+/*.orbit-bullets{
         position: absolute;
         right: 10px;
         top: 18px;
@@ -193,4 +228,4 @@ hr {
                 background: #E2927E;
             }
         }
-    }
+    }*/
