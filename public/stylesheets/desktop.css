@@ -14,6 +14,11 @@ body{
 
 }
 
+section.active > .content {
+    padding-left:40px !important;
+    padding-right:40px !important;
+}
+
 #main-content{
     height:100%;
 }
@@ -110,9 +115,9 @@ hr {
         top: 800px !important;
 }
 */
-#main-content .orbit-container{
+/*#main-content .orbit-container{
     margin-bottom:-50px;
-}
+}*/
 
 .orbit-container .orbit-prev {
     background-color: transparent !important;
