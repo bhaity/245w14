@@ -33,7 +33,7 @@
             <div class="row" style="height:100%;">
                 <div class="small-12 columns" style="height:100%;">
                     <div class="everything" style="height:100%;">
-                      <div class="section-container vertical-tabs" data-section="vertical-tabs" style="height:100%;">
+                      <div class="section-container vertical-tabs" data-section="vertical-tabs" style="min-height:100%;">
                         <section>
                             <div data-section-title class="title">
                                 <br/>
@@ -69,12 +69,19 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <p>
+                                <div class="small-8 columns">
+                                  <p>
                                     At the crossroads of three Manhattan neighborhoods,
                                     Village Green West inhabits a place
                                     where the aesthetic of the past meets the
                                     efficiency of the future. With details and finishes that are a nod to the rich context of time and place, and systems, services and amenities that are state-of-the-art in terms of comfort and sustainability, Village Green West embodies the art of living better.
-                                </p>
+                                  </p>
+                                </div>
+                                <div class="small-4 columns">
+                                    <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
+                                    <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
+                                </div>    
+
                             </div>
                         </section>
                         <section class="active">
@@ -411,23 +418,24 @@ door.
                                 <div class="head">
                                     Availability <hr>
                                 </div>
-                                <ul data-orbit data-options="timer:false;slide_number:false;">
-                                    <li>
+                                <ul data-orbit data-options="timer:false;slide_number:false;bullets:false;navigation_arrows:false;">
+                                    <li data-orbit-slide="T1">
                                         <a href="images/Floorplan.jpg" data-lightbox="Floorplan">
                                           <img class="cent white-border" src="images/Floorplan.jpg" />
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-orbit-slide="3B">
                                         <a href="images/Floorplan2.jpg" data-lightbox="Floorplan">
                                           <img class="cent white-border" src="images/Floorplan2.jpg" />
                                         </a>
                                     </li>
-                                    <li>
+                                    <li data-orbit-slide="3C">
                                         <a href="images/Floorplan3.jpg" data-lightbox="Floorplan">
                                           <img class="cent white-border" src="images/Floorplan3.jpg" />
                                         </a>
                                     </li>
                                 </ul>
+                                <br/>
                             <div class='row'>
                                                 <div class='large-12 columns'>
                                                  <table class="availabilities_table">
@@ -456,7 +464,7 @@ door.
                                                    </tr>
                                                    <tr>
                                                      <td>
-                                                        T1
+                                                        <a href="#" data-orbit-link="T1"> T1 </a>
                                                      </td>
                                                      <td>
                                                         South
@@ -479,7 +487,7 @@ door.
                                                    </tr>
                                                    <tr>
                                                      <td>
-                                                        3B
+                                                        <a href="#" data-orbit-link="3B"> 3B </a>
                                                      </td>
                                                      <td>
                                                         South
@@ -502,7 +510,7 @@ door.
                                                    </tr>
                                                    <tr>
                                                      <td>
-                                                        3C
+                                                        <a href="#" data-orbit-link="3C"> 3C </a>
                                                      </td>
                                                      <td>
                                                         South
@@ -882,10 +890,14 @@ door.
                 });
                 //alert(document.location.pathname);
                 $( "#residences_link" ).click(function() {
-                    $("#res_sublinks").slideDown("slow", function() {
+                    $(".sublinks").slideDown("slow", function() {
     
                     });
                 });
+
+                $(".left_arrow").click(function(){
+                    $(".orbit-prev").trigger( "click" );
+                })
    
 
                 $(".orbit-slides-container, .orbit-prev, .orbit-next").mouseenter(function(){

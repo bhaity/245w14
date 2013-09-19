@@ -5,6 +5,8 @@ html{
 }
 
 
+
+
 body{
     font-family: Arial !important;
     height:100%;
@@ -12,9 +14,19 @@ body{
     font-size: 10pt;*/
 }
 
-.everything{
-
+body p, ul, table{
+    font-size:10pt;
 }
+
+/*#splash_div{
+    width:600px;
+    height:600px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-300px; /* width / -2 
+    margin-top:-300px; /* height / -2 
+}*/
 
 section.active > .content {
     padding-left:40px !important;
@@ -194,6 +206,7 @@ hr {
 }
 
 .head{
+    padding-top:5px !important;
 	margin-bottom:50px;
 	font-family: ITCCenturyW01-BookItali;
 	font-size: 24pt;
