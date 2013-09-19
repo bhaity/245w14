@@ -10,6 +10,8 @@
 
 
         <link rel="stylesheet" href="stylesheets/app.css">
+         <link rel="stylesheet" href="stylesheets/mobile.css">
+         <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/9c63ad8b-0542-46ff-9c1d-b98c849ab9eb.css"/>
 
 
         <script src="javascripts/vendor/custom.modernizr.js"></script>
@@ -19,11 +21,11 @@
         <header>
             <div class="row">
                 <div class="small-6 columns">
-                    <img src="images/Logo.gif"/>
+                    <img style="max-width:180px;" src="images/Logo.gif"/>
                 </div>
                 <div class="small-6 columns">
-                    <h2>The Art of Better Living</h2>
-                    <p style="font-size:10pt;">Another downtown landmark<br>
+                    <h2 class="head">The Art of Better Living</h2>
+                    <p style="line-height:1.2em;font-size:10pt;">Another downtown landmark<br>
                         by <strong>alfa</strong> development &trade; and the
                         Namer Organization</p>
                 </div>
@@ -37,9 +39,9 @@
                             <p class="title" data-section-title><a href="#">The Building</a></p>
                             <div class="content" data-section-content>
                                 <ul data-orbit data-options="timer:false;slide_number:false;">
-                                    <li><img src="images/Hero.jpg" /></li>
-                                    <li><img src="images/Hero.jpg" /></li>
-                                    <li><img src="images/Hero.jpg" /></li>
+                                    <li><img class="white-border" src="images/Building.jpg" /></li>
+                                    <li><img class="white-border" src="images/Building2.jpg" /></li>
+                                    <li><img class="white-border" src="images/Building3.jpg" /></li>
                                 </ul>
                                 <p>
                                     At the crossroads of three Manhattan neighborhoods,
@@ -53,9 +55,9 @@
                             <p class="title" data-section-title><a href="#">Residences</a></p>
                             <div class="content" data-section-content>
                                 <ul data-orbit data-options="timer:false;slide_number:false;">
-                                    <li><img src="images/Residences.jpg" /></li>
-                                    <li><img src="images/Residences.jpg" /></li>
-                                    <li><img src="images/Residences.jpg" /></li>
+                                    <li><img class="white-border" src="images/Residences.jpg" /></li>
+                                    <li><img class="white-border" src="images/Residences2.jpg" /></li>
+                                    <li><img class="white-border" src="images/Residences3.jpg" /></li>
                                 </ul>
                                 <p>
                                     Interiors engage the senses, with wide plank
@@ -66,12 +68,12 @@
                             </div>
                         </section>
                         <section>
-                            <p class="title" data-section-title><a href="#">Penthouses</a></p>
+                            <p class="title" data-section-title><a href="#">Tower and Penthouse</a></p>
                             <div class="content" data-section-content>
                                 <ul data-orbit data-options="timer:false;slide_number:false;">
-                                    <li><img src="images/PH.jpg" /></li>
-                                    <li><img src="images/PH.jpg" /></li>
-                                    <li><img src="images/PH.jpg" /></li>
+                                    <li><img class="white-border" src="images/Penthouses.jpg" /></li>
+                                    <li><img class="white-border" src="images/Penthouses2.jpg" /></li>
+                                    <li><img class="white-border" src="images/Penthouses3.jpg" /></li>
                                 </ul>
                                 <p>
                                     Enjoy the exclusivity of your own private floor
@@ -85,9 +87,9 @@
                             <p class="title" data-section-title><a href="#">Amenities</a></p>
                             <div class="content" data-section-content>
                                 <ul data-orbit data-options="timer:false;slide_number:false;">
-                                    <li><img src="images/BetterLiving.jpg" /></li>
-                                    <li><img src="images/BetterLiving.jpg" /></li>
-                                    <li><img src="images/BetterLiving.jpg" /></li>
+                                    <li><img class="white-border" src="images/BetterLiving.jpg" /></li>
+                                    <li><img class="white-border" src="images/BetterLiving.jpg" /></li>
+                                    <li><img class="white-border" src="images/BetterLiving.jpg" /></li>
                                 </ul>
                                 <p>
                                     The Wellness Center is a first-class amenity
@@ -99,10 +101,10 @@
                         <section>
                             <p class="title" data-section-title><a href="#">Neighborhood</a></p>
                             <div class="content" data-section-content>
-                                <ul data-orbit data-options="timer:false;slide_number:false;">
-                                    <li><img src="images/Neighborhood.jpg" /></li>
-                                    <li><img src="images/Neighborhood.jpg" /></li>
-                                    <li><img src="images/Neighborhood.jpg" /></li>
+                                <ul data-orbit data-options="timer:false;bullets:false;slide_number:false;">
+                                    <li><img class="white-border" src="images/Neighborhood.jpg" /></li>
+                                    <li><img class="white-border" src="images/Neighborhood.jpg" /></li>
+                                    <li><img class="white-border" src="images/Neighborhood.jpg" /></li>
                                 </ul>
                                 <p>
                                     One building at the heart of the crossroads of
@@ -116,9 +118,9 @@
                         <section>
                             <p class="title" data-section-title><a href="#">Map</a></p>
                             <div class="content" data-section-content>
-                                <img src='images/Map.jpg'>
+                                <img class="white-border constrain" src='images/Map.jpg'>
                                 <div>
-                                    <h3>Selected Nearby Locations</h3>
+                                    <h3 STYLE="font-size:12pt">SELECTED NEARBY LOCATIONS</h3>
                                     <ul class='inline-list'>
                                         <li>Apple Store</li>
                                         <li>Alexander Mc-Queen</li>
@@ -146,14 +148,14 @@
                                         <img src="images/Floorplan.jpg" />
                                         <div class="orbit-caption">
                                             <div class='row collapse'>
-                                                <div class='small-6 columns'>
+                                                <div class='small-8 columns'>
                                                     <p>
                                                         <span class='metric'>Residence</span> T1<br>
                                                         <span class='metric'>Exposures</span> North / South<br>
                                                         <span class='metric'>Int / Ext Sq Ft</span> 3,038 / 551
                                                     </p>
                                                 </div>
-                                                <div class='small-6 columns'>
+                                                <div class='small-4 columns'>
                                                     <p>
                                                         <span class='metric'>Price</span> 5M<br>
                                                         <span class='metric'>Cc</span> $1,156<br>
@@ -167,14 +169,14 @@
                                         <img src="images/Floorplan.jpg" />
                                         <div class="orbit-caption">
                                             <div class='row collapse'>
-                                                <div class='small-6 columns'>
+                                                <div class='small-8 columns'>
                                                     <p>
                                                         <span class='metric'>Residence</span> T2<br>
                                                         <span class='metric'>Exposures</span> North / South<br>
                                                         <span class='metric'>Int / Ext Sq Ft</span> 3,038 / 551
                                                     </p>
                                                 </div>
-                                                <div class='small-6 columns'>
+                                                <div class='small-4 columns'>
                                                     <p>
                                                         <span class='metric'>Price</span> 5M<br>
                                                         <span class='metric'>Cc</span> $1,156<br>
@@ -188,14 +190,14 @@
                                         <img src="images/Floorplan.jpg" />
                                         <div class="orbit-caption">
                                             <div class='row collapse'>
-                                                <div class='small-6 columns'>
+                                                <div class='small-8 columns'>
                                                     <p>
                                                         <span class='metric'>Residence</span> T3<br>
                                                         <span class='metric'>Exposures</span> North / South<br>
                                                         <span class='metric'>Int / Ext Sq Ft</span> 3,038 / 551
                                                     </p>
                                                 </div>
-                                                <div class='small-6 columns'>
+                                                <div class='small-4 columns'>
                                                     <p>
                                                         <span class='metric'>Price</span> 5M<br>
                                                         <span class='metric'>Cc</span> $1,156<br>
@@ -209,14 +211,14 @@
                                         <img src="images/Floorplan.jpg" />
                                         <div class="orbit-caption">
                                             <div class='row collapse'>
-                                                <div class='small-6 columns'>
+                                                <div class='small-8 columns'>
                                                     <p>
                                                         <span class='metric'>Residence</span> T4<br>
                                                         <span class='metric'>Exposures</span> North / South<br>
                                                         <span class='metric'>Int / Ext Sq Ft</span> 3,038 / 551
                                                     </p>
                                                 </div>
-                                                <div class='small-6 columns'>
+                                                <div class='small-4 columns'>
                                                     <p>
                                                         <span class='metric'>Price</span> 5M<br>
                                                         <span class='metric'>Cc</span> $1,156<br>
@@ -230,14 +232,14 @@
                                         <img src="images/Floorplan.jpg" />
                                         <div class="orbit-caption">
                                             <div class='row collapse'>
-                                                <div class='small-6 columns'>
+                                                <div class='small-8 columns'>
                                                     <p>
                                                         <span class='metric'>Residence</span> T5<br>
                                                         <span class='metric'>Exposures</span> North / South<br>
                                                         <span class='metric'>Int / Ext Sq Ft</span> 3,038 / 551
                                                     </p>
                                                 </div>
-                                                <div class='small-6 columns'>
+                                                <div class='small-4 columns'>
                                                     <p>
                                                         <span class='metric'>Price</span> 5M<br>
                                                         <span class='metric'>Cc</span> $1,156<br>
@@ -253,7 +255,7 @@
                         <section id='fact-sheet'>
                             <p class="title" data-section-title><a href="#">Fact Sheet</a></p>
                             <div class="content" data-section-content>
-                                <h2>Amenities</h2>
+                                <h2>AMENITIES</h2>
                                 <hr>
                                 <ul>
                                     <li>24-hour attended lobby</li>
@@ -266,7 +268,7 @@
                                     <li>Private storage units</li>
                                     <li>Targeting LEED Gold Certification</li>
                                 </ul>
-                                <h2>Residence Features</h2>
+                                <h2>RESIDENCE FEATURES</h2>
                                 <hr>
                                 <ul>
                                     <li>
@@ -285,7 +287,7 @@
                                     <li>Wind generated electricity source</li>
                                     <li>LED lighting where possible</li>
                                 </ul>
-                                <h2>Kitchen</h2>
+                                <h2>KITCHEN</h2>
                                 <hr>
                                 <ul>
                                     <li>Custom white paneled cabinets with glass upper cabinets by Siematic</li>
@@ -305,7 +307,7 @@
                                     <li>Designer series under-mounted sink by Elkay</li>
                                     <li>In-Sink-Erator garbage disposal</li>
                                 </ul>
-                                <h2>Master Bathroom</h2>
+                                <h2>MASTER BATHROOM</h2>
                                 <hr>
                                 <ul>
                                     <li>Locally sourced honed marble walls and bathtub surround</li>
@@ -315,7 +317,7 @@
                                     <li>Deep soaking bathtubs</li>
                                     <li>Eco-friendly high efficiency Guinevere toilets by TOTO</li>
                                 </ul>
-                                <h2>Penthouse</h2>
+                                <h2>PENTHOUSES</h2>
                                 <hr>
                                 <ul>
                                     <li>50’ of living space with expansive north and south views</li>
@@ -329,7 +331,7 @@
                         <section>
                             <p class="title" data-section-title><a href="#">Team</a></p>
                             <div class="content" data-section-content>
-                                <img src='images/Team.jpg'/>
+                                <img class="white-border constrain" src='images/Team.jpg'/>
                                 <p>
                                     Composed of longtime residents of the downtown Manhattan area, the Alfa Development team has firsthand knowledge of the downtown
                                     experience. Always mindful of how their buildings will become part of the fabric of their community, Alfa’s guiding principle is best articulated
@@ -348,12 +350,12 @@
                         <section>
                             <p class="title" data-section-title><a href="#">Press</a></p>
                             <div class="content" data-section-content>
-                                <img src='images/Forbes.jpg' />
-                                <p>Ultimage Kitchens For The Holidays 11/21/2012</p>
-                                <img src='images/New_York_Magazine.jpg' />
-                                <p>Condo Madness Returns 11/05/2012</p>
-                                <img src='images/New_York_Times.jpg' />
-                                <p>The Take-It-on-Faith Condo 11/18/2012</p>
+                                <img class="constrain"  src='images/Forbes.jpg' />
+                                <p><b>Ultimage Kitchens For The Holidays 11/21/2012</b></p>
+                                <img class="constrain"  src='images/New_York_Magazine.jpg' />
+                                <p><b>Condo Madness Returns 11/05/2012</b></p>
+                                <img class="constrain"  src='images/New_York_Times.jpg' />
+                                <p><b>The Take-It-on-Faith Condo 11/18/2012</b></p>
                             </div>
                         </section>
                     </div>

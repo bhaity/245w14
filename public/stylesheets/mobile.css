@@ -1,0 +1,17 @@
+.head{
+	font-family: ITCCenturyW01-BookItali;
+	font-size: 18pt;
+}
+
+.white-border{
+    border: 5px solid white;
+}
+
+.constrain{
+	max-width:100%;
+}
+
+/*.orbit-bullets{
+	top: -515px;
+    right: -295px;
+}*/
