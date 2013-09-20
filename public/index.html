@@ -69,10 +69,23 @@
         <script src="javascripts/foundation/foundation.topbar.js"></script>
 
     <script>
+
         $(document).ready(function() {
             if (($(window).width() < 800) && (document.location.pathname == '/')) {
               document.location = "/mobile";
             }
+
+        jQuery.fn.center = function () {
+          this.css("position","absolute");
+          this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+                                                $(window).scrollTop()) + "px");
+          this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+          return this;
+        }
+
+    $("#splash_div").center();
+
         });
     </script>
     </body>
