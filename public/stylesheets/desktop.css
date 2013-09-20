@@ -4,9 +4,6 @@ html{
 
 }
 
-
-
-
 body{
     font-family: Arial !important;
     height:100%;
@@ -121,6 +118,7 @@ hr {
 }
 .orbit-bullets{
     float:right;
+    right:75px;
 
 }
 /*.orbit-bullets{
@@ -232,6 +230,10 @@ hr {
 	margin-right:auto;
 	max-height:400px;
 	max-width:400px;
+}
+
+.orbit-prev, .orbit-next{
+  display:none;
 }
 
 /*.orbit-bullets{
