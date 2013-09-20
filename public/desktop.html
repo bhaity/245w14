@@ -128,11 +128,11 @@
                         <section id="residences">
                             <p class="title" data-section-title>
                                 <a id="residences_link" class="parent-nav" href="#">RESIDENCES</a>
-                                <!-- <a id="kitchens_link"  class="child-nav" href="nowhere"> &nbsp;&nbsp; > kitchens</a>
-                                <a id="bathrooms_link" class="child-nav" href="nowhere"> &nbsp;&nbsp; > bathrooms</a> -->
+                                <a id="kitch_sublink"  class="parent-nav title" href="#"> &nbsp;&nbsp; > Kitchens</a>
+                                <a id="bathrooms_sublink" class="parent-nav" href="#"> &nbsp;&nbsp; > Bathrooms</a>
                             </p>
                                 
-                            <div class="content" data-section-content>
+                            <div id="residences_content" class="content" data-section-content>
                                 <div class="head">
                                     Residences <hr>
                                 </div>
@@ -165,10 +165,10 @@ Tobacco Smoke control ensure that your home remains a sanctuary from any disturb
                                     <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
                                     <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
                                 </div>
-                              <!-- <div class="section-container tabs" data-section="tabs">
+                              <div class="section-container tabs" data-section="tabs" style="display:none">
                               <section>
                                <p class="title res_subtitle" data-section-title><a href="#">KITCHENS</a></p>
-                                <div class="content">
+                                <div class="content" id="kitchen_content">
                                 <div class="head">
                                     Kitchens <hr> <br/>
                                 </div>
@@ -190,14 +190,14 @@ Tobacco Smoke control ensure that your home remains a sanctuary from any disturb
                                     </li>
                                 </ul>
                                 <p>
-                                    The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
+                                The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
 are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixtures with in-line water filtration
 are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
 home cooking and entertaining.
                                 </p>
                                </div>
                                </section>
-                               <section>
+                               <section id="bathrooms_content">
                                 <p class="title res_subtitle" data-section-title><a href="#">BATHROOMS</a></p>
                                 <div class="content">
                                 <div class="head">
@@ -230,7 +230,7 @@ home cooking and entertaining.
                                </section>
                                </div>
 
-                            </div> -->
+                            </div>
                         </section>
                         <section id="penthouses">
                             <p class="title" data-section-title><a href="#">PENTHOUSES</a></p>
@@ -257,7 +257,7 @@ home cooking and entertaining.
                                 </ul>
                                 <div class="small-9 columns">
                                 <p>
-                                    Enjoy the exclusivity of your own private floor with a spectacular 50-foot living room and unstoppable light and
+                                Enjoy the exclusivity of your own private floor with a spectacular 50-foot living room and unstoppable light and
 views to the South and North from giant floor-to-ceiling windows. Entertain or relax on one of your terraces, cook
 with your friends and family in your spacious custom kitchen, or just enjoy a bottle of your finest from the wine
 fridge.
@@ -270,7 +270,11 @@ fridge.
                             </div>
                         </section>
                         <section id="amenities">
-                            <p class="title" data-section-title><a href="#">AMENITIES</a></p>
+                            <p class="title" data-section-title>
+                                <a href="#">AMENITIES</a>
+                                <a id="better_living_link"  class="child-nav" href="nowhere"> &nbsp;&nbsp; > Better Living</a>
+                                <a id="open_air_link" class="child-nav" href="nowhere"> &nbsp;&nbsp; > Open Air</a>
+                            </p>
                             <div class="content" data-section-content>
                                 <div class="head">
                                     Amenities <hr>
@@ -900,7 +904,13 @@ door.
                 // $("").css("height", h);
 
 
+                   $("#kitch_sublink").on("click", function(e) {
+                    console.log("asdfasdf");
+                       $("section#residences .content").replaceWith($("#kitchen_content")).addClass("dick");
 
+
+
+                   });
 
 
 
@@ -915,12 +925,6 @@ door.
                         $(event.currentTarget).parent().parent().removeClass('active')
                      }, 100);
                     }
-                });
-                //alert(document.location.pathname);
-                $( "#residences_link" ).click(function() {
-                    $(".sublinks").slideDown("slow", function() {
-    
-                    });
                 });
 
                 $("section#building1 > .content > .controls > .left_arrow").click(function(event){
@@ -977,10 +981,10 @@ door.
                   $(".orbit-prev, .orbit-next").stop().animate({'opacity':'0'}, 400);
                 });
 
-                $('.section-container .title').on('click', function() {
+                $('.title').on('click', function() {
                     setTimeout(function() {
                         //console.log($('.section-container section.active .orbit-container ul').height());
-                        if ($('.section-container section.active .orbit-container ul').height() === 0) {
+                        if ($('.section-container section.active .orbit-container ul, .dick').height() === 0) {
                             $(window).trigger('resize');
                             console.log('0');
                         }
