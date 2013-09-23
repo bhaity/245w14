@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="stylesheets/desktop.css">
         <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/9c63ad8b-0542-46ff-9c1d-b98c849ab9eb.css"/>
         <link href="javascripts/lightbox/css/lightbox.css" rel="stylesheet" />
-        <script type="text/javascript" src="javascripts/ejs_0.9_alpha_1_production.js"></script>
-
 
 
 
@@ -34,50 +32,21 @@
         <section id='main-content' style="height:100%;">
             <div class="row" style="height:100%;">
                 <div class="small-12 columns" style="height:100%;">
-                    <div class="everything">
-                    	<div class="small-3 columns" style="padding-top:20px;padding-right:0px;padding-left:20px;">
-                    	  <a renders-this="#building_html" class="logo" href="#"><img style="max-width:180px;" class="cent" src="images/Logo.gif"/></a>
-                    	  <div class="sidebar" style="padding-left:5px;">
-                    	  	<a renders-this="#building_html" href="#">THE BUILDING</a><br/>
-                    	  	<a renders-this="#rez_html" href="#" id="rez">RESIDENCES</a><br/>
-	                    	  	<div class="sub" id="rez_sub" style="display:none;">
-	                    	  		<a renders-this="#kitchens_html" href="#"> › Kitchens </a>
-	                    	  		<br/>
-	                    	  		<a renders-this="#bathrooms_html" href="#"> › Bathrooms </a>
-	                    	  	</div>
-                    	  	<a renders-this="#penthouses_html" href="#">PENTHOUSES</a><br/>
-                    	  	<a renders-this="#amenities_html" href="#" id="amen">AMENITIES</a><br/>
-	                    	  	<div class="sub" id="amen_sub" style="display:none;">
-	                    	  		<a renders-this="#amenities_html" href="#"> › Better Living </a>
-                                    <br/>
-                                    <a renders-this="#open_air_html" href="#"> › Open Air </a>
-	                    	  	</div>
-                    	  	<a renders-this="#neigh_html" href="#" id="neigh">NEIGHBORHOOD</a><br/>
-                    	  	<a renders-this="#map_html" href="#" id ="map">MAP</a><br/><br/>
-                    	  	<a renders-this="#avail_html" href="#">AVAILABILITY</a><br/>
-                    	  	<a renders-this="#facts_html" href="#">FACT SHEET</a><br/>
-                    	  	<a renders-this="#team_html" href="#">TEAM</a><br/>
-                    	  	<a renders-this="#press_html" href="#">PRESS</a><br/>
-                            <br/>
-                    	  	<a renders-this="#contact_html" href="#">Contact</a><br/>
-                    	  	<a renders-this="#register_html" href="#">Register</a><br/>
-                    	  	<a renders-this="#legal_html" href="#">Legal</a><br/>
-                    	  </div>
-
-                    	</div>
-                    	<div class="small-9 columns content-area">
-                    	
-                    	</div>
-                    </div>
-                </div>  
-            </div>
-        </section>
-
-
-        <div id="building_html" style="display:none;">
-          <div class="head">
-            The Building <hr>
-          </div>
+                    <div class="everything" style="height:100%;">
+                      <div class="section-container vertical-tabs" data-section="vertical-tabs" style="min-height:100%;">
+                        <section id="building1">
+                            <div data-section-title class="title">
+                                <br/>
+                                <img style="max-width:180px;" class="cent" src="images/Logo.gif"/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </div>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    The Building <hr>
+                                </div>
                                 <ul data-orbit data-options="timer:false;slide_number:false;">
                                     <li>
                                         <a href="images/Building.jpg" data-lightbox="building1">
@@ -111,263 +80,280 @@
                                   <div class="small-3 columns controls">
                                       <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
                                       <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-                                  </div> 
-           
-        </div>
+                                  </div>   
+                            </div>
+                        </section>
+                        <section id="building2" class="active">
+                            <p class="title" data-section-title ><a href="#">THE BUILDING</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    The Building <hr>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Building.jpg" data-lightbox="building2">
+                                          <img class="cent white-border" src="images/Building.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Building_02.jpg" data-lightbox="building2">
+                                          <img class="cent white-border" src="images/Building_02.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Building2.jpg" data-lightbox="building2">
+                                          <img class="cent white-border" src="images/Building2.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Building3.jpg" data-lightbox="building2">
+                                          <img class="cent white-border" src="images/Building3.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="small-9 columns">
+                                  <p>
+                                    At the crossroads of three Manhattan neighborhoods,
+                                    Village Green West inhabits a place
+                                    where the aesthetic of the past meets the
+                                    efficiency of the future. With details and finishes that are a nod to the rich context of time and place, and systems, services and amenities that are state-of-the-art in terms of comfort and sustainability, Village Green West embodies the art of living better.
+                                  </p>
+                               </div>
+                               <div class="small-3 columns controls">
+                                    <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
+                                    <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
+                               </div>    
+                            </div>
+                        </section>
+                        <section id="residences">
+                            <p class="title" data-section-title>
+                                <a id="residences_link" class="parent-nav" href="#">RESIDENCES</a>
+                                <!-- <a id="kitchens_link"  class="child-nav" href="nowhere"> &nbsp;&nbsp; > kitchens</a>
+                                <a id="bathrooms_link" class="child-nav" href="nowhere"> &nbsp;&nbsp; > bathrooms</a> -->
+                            </p>
+                                
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    Residences <hr>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences2.jpg" data-lightbox="Residences">
+                                          <img class="cent white-border" src="images/Residences2.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences3.jpg" data-lightbox="Residences">
+                                          <img class="cent white-border" src="images/Residences3.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="small-9 columns">
+                                <p>
+                                    Interiors are designed to engage the senses, by juxtaposing the familiar with the unique. Wide plank European oak
+flooring, custom paneled doors, crown moldings throughout, and black steel framed windows give the home a turn
+of the century warmth. Zone controlled central heating and cooling, Traco U-Value windows, and Environmental
+Tobacco Smoke control ensure that your home remains a sanctuary from any disturbance from the outside world.
+                                </p>
+                                </div>
+                                <div class="small-3 columns controls">
+                                    <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
+                                    <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
+                                </div>
+                              <!-- <div class="section-container tabs" data-section="tabs">
+                              <section>
+                               <p class="title res_subtitle" data-section-title><a href="#">KITCHENS</a></p>
+                                <div class="content">
+                                <div class="head">
+                                    Kitchens <hr> <br/>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences2">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences2">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences2">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
+are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixtures with in-line water filtration
+are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
+home cooking and entertaining.
+                                </p>
+                               </div>
+                               </section>
+                               <section>
+                                <p class="title res_subtitle" data-section-title><a href="#">BATHROOMS</a></p>
+                                <div class="content">
+                                <div class="head">
+                                    Bathrooms <hr> <br/>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Residences.jpg" data-lightbox="Residences">
+                                          <img class="cent white-border" src="images/Residences.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
+are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixtures with in-line water filtration
+are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
+home cooking and entertaining.
+                                </p>
+                               </div>
+                               </section>
+                               </div>
 
-        <div id="rez_html" style="display:none;">
-          <div class="head">
-            Residences <hr>
-          </div>
-            <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/Residences.jpg" data-lightbox="Residences">
-                      <img class="cent white-border" src="images/Residences.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Residences2.jpg" data-lightbox="Residences">
-                      <img class="cent white-border" src="images/Residences2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Residences3.jpg" data-lightbox="Residences">
-                      <img class="cent white-border" src="images/Residences3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                Interiors are designed to engage the senses, by juxtaposing the familiar with the unique. Wide plank European oak
-                flooring, custom paneled doors, crown moldings throughout, and black steel framed windows give the home a turn
-                of the century warmth. Zone controlled central heating and cooling, Traco U-Value windows, and Environmental
-                Tobacco Smoke control ensure that your home remains a sanctuary from any disturbance from the outside world.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>
-        </div>
-
-        <div id="kitchens_html" style="display:none;">
-          <div class="head">
-            Residences > Kitchens <hr>
-          </div>
-          <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/Kitchen.jpg" data-lightbox="Kitchens">
-                      <img class="cent white-border" src="images/Kitchen.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Kitchen2.jpg" data-lightbox="Kitchens">
-                      <img class="cent white-border" src="images/Kitchen2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Kitchen3.jpg" data-lightbox="Kitchens">
-                      <img class="cent white-border" src="images/Kitchen3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
-                are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixtures with in-line water filtration
-                are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
-                home cooking and entertaining.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>
-        </div>
-
-        <div id="bathrooms_html" style="display:none;">
-          <div class="head">
-            Residences > Bathrooms <hr>
-          </div>
-          <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/Bathroom.jpg" data-lightbox="Bathroom">
-                      <img class="cent white-border" src="images/Bathroom.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Bathroom2.jpg" data-lightbox="Bathroom">
-                      <img class="cent white-border" src="images/Bathroom2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Bathroom3.jpg" data-lightbox="Bathroom">
-                      <img class="cent white-border" src="images/Bathroom3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                The timeless appeal of Siematic custom cabinetry with a fully integrated Liebherr refrigerator and Bosch dishwasher,
-                are partnered with the bold lines of a Smeg cooktop and oven. Lefroy Brooks fixtures with in-line water filtration
-                are mounted on beautiful and durable Caeserstone countertops for a European kitchen where you will feel right at
-                home cooking and entertaining.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>   
-        </div>
-
-        <div id="penthouses_html" style="display:none;">
-          <div class="head">
-            Penthouses <hr>
-          </div>
-          <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/Penthouses.jpg" data-lightbox="Penthouses">
-                      <img class="cent white-border" src="images/Penthouses.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Penthouses2.jpg" data-lightbox="Penthouses">
-                      <img class="cent white-border" src="images/Penthouses2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Penthouses3.jpg" data-lightbox="Penthouses">
-                      <img class="cent white-border" src="images/Penthouses3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                Enjoy the exclusivity of your own private floor with a spectacular 50-foot living room and unstoppable light and
-                views to the South and North from giant floor-to-ceiling windows. Entertain or relax on one of your terraces, cook
-                with your friends and family in your spacious custom kitchen, or just enjoy a bottle of your finest from the wine
-                fridge.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>
-           
-        </div>
-
-        <div id="amenities_html" style="display:none;">
-          <div class="head">
-            Better Living <hr>
-          </div>
-          <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/BetterLiving.jpg" data-lightbox="BetterLiving">
-                      <img class="cent white-border" src="images/BetterLiving.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/BetterLiving2.jpg" data-lightbox="BetterLiving">
-                      <img class="cent white-border" src="images/BetterLiving2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/BetterLiving3.jpg" data-lightbox="BetterLiving">
-                      <img class="cent white-border" src="images/BetterLiving3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                At Village Green West, residents will take sanctuary in the Wellness Center- a first class amenity suite where fitness,
-                relaxation, service and entertainment are available 24 hours a day. Play a game of pool in the lounge, go for
-                a run in the gym, decompress in the sauna or have our Wellness Concierge book you a massage in the treatment
-                room. Whatever you need to recharge, you’ll never have to leave home to find it.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>
-        </div>
-
-        <div id="open_air_html" style="display:none;">
-            <div class="head">
-                Open Air <hr/>
-            </div>
-            <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/OpenAir.jpg" data-lightbox="OpenAir">
-                      <img class="cent white-border" src="images/OpenAir.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/OpenAir2.jpg" data-lightbox="OpenAir">
-                      <img class="cent white-border" src="images/OpenAir2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/OpenAir3.jpg" data-lightbox="OpenAir">
-                      <img class="cent white-border" src="images/OpenAir3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                At Village Green West, residents will take sanctuary in the Wellness Center- a first class amenity suite where fitness,
-                relaxation, service and entertainment are available 24 hours a day. Play a game of pool in the lounge, go for
-                a run in the gym, decompress in the sauna or have our Wellness Concierge book you a massage in the treatment
-                room. Whatever you need to recharge, you’ll never have to leave home to find it.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>   
-        </div>
-
-        <div id="neigh_html" style="display:none;">
-          <div class="head">One Building, Three Neighborhoods<hr/></div> 
-          <ul data-orbit data-options="timer:false;slide_number:false;">
-                <li>
-                    <a href="images/Neighborhood.jpg" data-lightbox="Neighborhood">
-                      <img class="cent white-border" src="images/Neighborhood.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Neighborhood2.jpg" data-lightbox="Neighborhood">
-                      <img class="cent white-border" src="images/Neighborhood2.jpg" />
-                    </a>
-                </li>
-                <li>
-                    <a href="images/Neighborhood3.jpg" data-lightbox="Neighborhood">
-                      <img class="cent white-border" src="images/Neighborhood3.jpg" />
-                    </a>
-                </li>
-            </ul>
-            <div class="small-9 columns">
-            <p>
-                Originally known for its bohemian culture, the West Village today is a mecca for high-end retail and acclaimed
-                restaurants while steps away, Chelsea and the Meatpacking District have transitioned from their industrial past to
-                become home to Manhattan’s hottest galleries, shopping, and nightlife. Village Green West could not be better
-                situated in terms of comfort, convenience, and culture. Whether shopping on Bleecker Street,strolling on the Highline,
-                or gallery hopping in Chelsea on opening night, the best of New York City is always just steps from your front
-                door.
-            </p>
-            </div>
-            <div class="small-3 columns controls">
-                <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
-                <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
-            </div>
-        </div>
-
-        <div id="map_html" style="display:none;">
-          <div class="head">
-             One Building, Three Neighborhoods <hr>
-          </div>
-          <div class="row">
-            <div class="large-4 columns">
-              <div class="section-container accordion map-accordion" data-section="accordion">
+                            </div> -->
+                        </section>
+                        <section id="penthouses">
+                            <p class="title" data-section-title><a href="#">PENTHOUSES</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    Penthouses <hr>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Penthouses.jpg" data-lightbox="Penthouses">
+                                          <img class="cent white-border" src="images/Penthouses.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Penthouses2.jpg" data-lightbox="Penthouses">
+                                          <img class="cent white-border" src="images/Penthouses2.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Penthouses3.jpg" data-lightbox="Penthouses">
+                                          <img class="cent white-border" src="images/Penthouses3.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="small-9 columns">
+                                <p>
+                                    Enjoy the exclusivity of your own private floor with a spectacular 50-foot living room and unstoppable light and
+views to the South and North from giant floor-to-ceiling windows. Entertain or relax on one of your terraces, cook
+with your friends and family in your spacious custom kitchen, or just enjoy a bottle of your finest from the wine
+fridge.
+                                </p>
+                                </div>
+                                <div class="small-3 columns controls">
+                                    <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
+                                    <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
+                                </div>    
+                            </div>
+                        </section>
+                        <section id="amenities">
+                            <p class="title" data-section-title><a href="#">AMENITIES</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    Amenities <hr>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/BetterLiving.jpg" data-lightbox="BetterLiving">
+                                          <img class="cent white-border" src="images/BetterLiving.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/BetterLiving2.jpg" data-lightbox="BetterLiving">
+                                          <img class="cent white-border" src="images/BetterLiving.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/BetterLiving3.jpg" data-lightbox="BetterLiving">
+                                          <img class="cent white-border" src="images/BetterLiving3.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="small-9 columns">
+                                <p>
+                                    At Village Green West, residents will take sanctuary in the Wellness Center- a first class amenity suite where fitness,
+relaxation, service and entertainment are available 24 hours a day. Play a game of pool in the lounge, go for
+a run in the gym, decompress in the sauna or have our Wellness Concierge book you a massage in the treatment
+room. Whatever you need to recharge, you’ll never have to leave home to find it.
+                                </p>
+                                </div>
+                                <div class="small-3 columns controls">
+                                    <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
+                                    <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="neighborhood">
+                            <p class="title" data-section-title><a href="#">NEIGHBORHOOD</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                   One Building, Three Neighborhoods <hr>
+                                </div>
+                                <ul data-orbit data-options="timer:false;slide_number:false;">
+                                    <li>
+                                        <a href="images/Neighborhood.jpg" data-lightbox="Neighborhood">
+                                          <img class="cent white-border" src="images/Neighborhood.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Neighborhood2.jpg" data-lightbox="Neighborhood">
+                                          <img class="cent white-border" src="images/Neighborhood.jpg" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="images/Neighborhood3.jpg" data-lightbox="Neighborhood">
+                                          <img class="cent white-border" src="images/Neighborhood3.jpg" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="small-9 columns">
+                                <p>
+                                    Originally known for its bohemian culture, the West Village today is a mecca for high-end retail and acclaimed
+restaurants while steps away, Chelsea and the Meatpacking District have transitioned from their industrial past to
+become home to Manhattan’s hottest galleries, shopping, and nightlife. Village Green West could not be better
+situated in terms of comfort, convenience, and culture. Whether shopping on Bleecker Street,strolling on the Highline,
+or gallery hopping in Chelsea on opening night, the best of New York City is always just steps from your front
+door.
+                                </p>
+                                </div>
+                                <div class="small-3 columns controls">
+                                    <img class="left_arrow" style="cursor:pointer;" src="images/left_aarow.png"/>
+                                    <img class="right_arrow" style="cursor:pointer;" src="images/right_aarow.png"/>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="map">
+                            <p class="title" data-section-title><a href="#">MAP<br/><br/></a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    One Building, Three Neighborhoods <hr>
+                                </div>
+                                <div class="row">
+                                  <div class="large-4 columns">
+                                    <div class="section-container accordion map-accordion" data-section="accordion">
                                       <section>
                                         <p class="title" data-section-title><a class="close-accordion-hack" href="#" style="border-top:0!important;">SHOPPING</a></p>
                                         <div class="content" data-section-content>
@@ -444,20 +430,22 @@
                                           </ol></p>
                                         </div>
                                       </section>
-              </div>
-            </div>
-            <div class="large-8 columns">
-              <a href="images/Map.jpg" data-lightbox="Map">
-                <img class="cent white-border" src="images/Map.jpg" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div id="avail_html" style="display:none;">
-            <div class="head">
-                Availability <hr/>
-            </div>
+                                    </div>
+                                  </div>
+                                  <div class="large-8 columns">
+                                    <a href="images/Map.jpg" data-lightbox="Map">
+                                          <img class="cent white-border" src="images/Map.jpg" />
+                                    </a>
+                                  </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id='availability'>
+                            <p class="title" data-section-title><a href="#">AVAILABILITY</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
+                                    Availability <hr>
+                                </div>
                                 <ul data-orbit data-options="timer:false;slide_number:false;bullets:false;navigation_arrows:false;">
                                     <li data-orbit-slide="T1">
                                         <a href="images/Floorplan.jpg" data-lightbox="Floorplan">
@@ -475,8 +463,7 @@
                                         </a>
                                     </li>
                                 </ul>
-
-                                      <br/>
+                                <br/>
                             <div class='row'>
                                                 <div class='large-12 columns'>
                                                  <table class="availabilities_table">
@@ -574,11 +561,13 @@
                                                    </tr>
                                                  </table>
                                                 </div>
-                                            </div>      
-        </div>
-
-        <div id="facts_html" style="display:none;">
-            <div class="head" style="margin-bottom:15px;">
+                                            </div>
+                            </div>
+                        </section>
+                        <section id='fact-sheet'>
+                            <p class="title" data-section-title><a href="#">FACT SHEET</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head" style="margin-bottom:15px;">
                                     Fact Sheet <hr>
                                 </div>
                                 <h4>AMENITIES</h4>
@@ -646,11 +635,13 @@
                                     <li>Approximately 1,100 SF of private outdoor space</li>
                                     <li>Smeg speed oven and warming drawer</li>
                                     <li>Full height 143 bottle Liebherr wine refrigerators</li>
-                                </ul>      
-        </div>
-
-        <div id="team_html" style="display:none;">
-            <div class="head" style="margin-bottom:20px;">
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="team">
+                            <p class="title" data-section-title><a href="#">TEAM</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head" style="margin-bottom:20px;">
                                     Team <hr>
                                 </div>
                                 <img style="max-width: 100% !important;" class="cent white-border" src='images/Team.jpg'/>
@@ -667,11 +658,13 @@
                                     to real estate development to every project. In the last five years, Alfa Development has produced over $150,000,000 of residential condominium
                                     development — all in downtown Manhattan. Michael Namer and Alfa Development are continuing with their mission to create
                                     more sustainable living experiences with the developments and residences that comprise the Green Collection.
-                                </p>       
-        </div>
-
-        <div id="press_html" style="display:none;">
-            <div class="head">
+                                </p>
+                            </div>
+                        </section>
+                        <section id="press">
+                            <p class="title" data-section-title><a href="#">PRESS<br/><br/></a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
                                     Press <hr>
                                 </div>
                                 <div class="row" style="text-align:center;">
@@ -697,12 +690,13 @@
                                         </a><br/>
                                       <b>The Take-It-on-Faith Condo 11/18/2012</b>
                                     </span>
-                                   </p> 
-                                </div>  
-        </div>
-
-        <div id="contact_html" style="display:none;">
-            <div class="content" data-section-content>
+                                   </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="contact">
+                            <p class="title" data-section-title><a style="font-size:12pt;" href="#">Contact</a></p>
+                            <div class="content" data-section-content>
                                 <div class="head">
                                     Contact <hr>
                                 </div>
@@ -718,11 +712,11 @@
                                 Fax: (212) 242 0152<br>
                                 Email: info@245W14th.com
                             </p>
-           
-        </div>
-
-        <div id="register_html" style="display:none;">
-            <div class="head">
+                        </section>
+                        <section id="register">
+                            <p class="title" data-section-title><a style="font-size:12pt;" href="#">Register</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
                                     Register <hr>
                                 </div>
                                 <form class='custom'>
@@ -812,10 +806,12 @@
                                       </div>
                                   </div>
                               </form>
-        </div>
-
-        <div id="legal_html" style="display:none;">
-          <div class="head">
+                            </div>
+                        </section>
+                        <section id="legal">
+                            <p class="title" data-section-title><a style="font-size:12pt;" href="#">Legal</a></p>
+                            <div class="content" data-section-content>
+                                <div class="head">
                                     Legal <hr>
                                 </div>
                             <p> 
@@ -832,10 +828,12 @@
                             </p>
                             <img class="cent white-border" src='images/small-logo.gif' />
                             </div>
-        </div>
-
-
-
+                        </section>
+                      </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
 
 
         <script>
@@ -882,15 +880,6 @@
         <script>
             $(document).foundation();
             $(document).ready(function() {
-                    var htmlString = $("#building_html").html();
-                    $(".content-area").html(htmlString);
-                    if ($('.orbit-container ul').height() === 0) {
-                            console.log("height is zero")
-                            //$(window).trigger('resize');
-                            $('.orbit-container ul').height(360);
-                        }
-
-
 
                 // function windowHeight() {
                 //     var myHeight = 0;
@@ -919,59 +908,26 @@
                     $(event.currentTarget).parent().find('.child-nav').toggle();
                 });
 
-                $("a.close-accordion-hack").click(function(event){
-                    console.log("here");
+                $(".close-accordion-hack").click(function(event){
                     if($(event.currentTarget).parent().parent().hasClass('active')){
+
                      window.setTimeout(function(){
                         $(event.currentTarget).parent().parent().removeClass('active')
-                     }, 200);
+                     }, 100);
                     }
                 });
-
-
-                 $("#rez").click(function(event) {
-                 	  if ($(event.currentTarget).hasClass("opened")){
-                 	    $("#rez_sub").slideUp("slow", function() {
-                 	    	$(event.currentTarget).removeClass("opened");
-                 	    });
-                 	  }
-                 	  else{
-                      $("#rez_sub").slideDown("slow", function() {
-                      	$(event.currentTarget).addClass("opened");
-                      });
-                 	  }
+                //alert(document.location.pathname);
+                $( "#residences_link" ).click(function() {
+                    $(".sublinks").slideDown("slow", function() {
+    
+                    });
                 });
 
-                $("#amen").click(function(event) {
-                 	  if ($(event.currentTarget).hasClass("opened")){
-                 	    $("#amen_sub").slideUp("slow", function() {
-                 	    	$(event.currentTarget).removeClass("opened");
-                 	    });
-                 	  }
-                 	  else{
-                      $("#amen_sub").slideDown("slow", function() {
-                      	$(event.currentTarget).addClass("opened");
-                      });
-                 	  }
+                $("section#building1 > .content > .controls > .left_arrow").click(function(event){
+                    $("section#building1 > .content > .orbit-container > .orbit-prev").trigger( "click" );
                 });
-
-
-
-                $(".sidebar a").click(function(event){
-                    $(".sidebar a").removeClass("chosen");
-                	$(event.currentTarget).toggleClass("chosen");
-
-                    var a = $(event.currentTarget).attr("renders-this");
-                    var htmlString = $(a).html();
-                    $(".content-area").html(htmlString);
-
-                });
-
-                $(".content-area > .controls > .left_arrow").click(function(event){
-                    $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $(".content-area > .controls > .right_arrow").click(function(event){
-                    $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
+                $("section#building1 > .content > .controls > .right_arrow").click(function(event){
+                    $("section#building1 > .content > .orbit-container > .orbit-next").trigger( "click" );
                 });
                   $("section#building2 > .content > .controls > .left_arrow").click(function(event){
                     $("section#building2 > .content > .orbit-container > .orbit-prev").trigger( "click" );
@@ -1021,13 +977,12 @@
                   $(".orbit-prev, .orbit-next").stop().animate({'opacity':'0'}, 400);
                 });
 
-                $('.sidebar a, .logo').on('click', function() {
-                    console.log('hi');
+                $('.section-container .title').on('click', function() {
                     setTimeout(function() {
-                        if ($('.orbit-container ul').height() === 0) {
-                            console.log("height is zero")
-                            //$(window).trigger('resize');
-                            $('.orbit-container ul').height(360);
+                        //console.log($('.section-container section.active .orbit-container ul').height());
+                        if ($('.section-container section.active .orbit-container ul').height() === 0) {
+                            $(window).trigger('resize');
+                            console.log('0');
                         }
                     }, 100);
                 });

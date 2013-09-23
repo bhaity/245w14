@@ -15,6 +15,12 @@ body p, ul, table{
     font-size:10pt;
 }
 
+.content-area{
+    padding-left:0px !important;
+    padding-top:20px;
+    padding-right:45px;
+}
+
 /*#splash_div{
     width:600px;
     height:600px;
@@ -25,22 +31,41 @@ body p, ul, table{
     margin-top:-300px; /* height / -2 
 }*/
 
-section.active > .content {
-    padding-left:40px !important;
-    padding-right:40px !important;
-}
 
 #main-content{
     height:100%;
+}
+
+.sidebar{
+    margin-top:20%;
+    font-family: ITC Century W01 Book !important; 
+
+
+}
+
+.sidebar a{
+    color:#989484;
+    line-height:20px;
+}
+
+.sidebar .sub{
+    font-size: 10pt;
+    padding-left:20px;
+}
+
+.sidebar a.chosen{
+    color:black;
+}
+
+.sidebar a:hover{
+    color:black;
+
 }
 
 .section-container.vertical-tabs {
     margin: 0 !important;
 }
 
-.section-container.vertical-tabs p.title a{
-  font-family: ITC Century W01 Book !important; 
-}
 
 h4{
   font-family: ITC Century W01 Book !important;  
@@ -75,15 +100,15 @@ table.availabilities_table tr:nth-of-type(even) {
     display:inline-block; 
     text-align:left;
 }
-.section-container.accordion.map-accordion{
+.accordion.map-accordion{
     border:0;
 }
 
-.section-container.accordion.map-accordion > section > .title {
+.accordion.map-accordion > section > .title {
     border:0px;
 }
 
-.section-container.accordion.map-accordion > section > .title > a {
+.accordion.map-accordion > section > .title > a {
     padding-top:5px !important;
     padding-bottom:5px !important;
     padding-left:0px;
@@ -91,14 +116,15 @@ table.availabilities_table tr:nth-of-type(even) {
     border-bottom:1px solid black;
     border-top:1px solid black;
     font-size: 12pt !important;
+    font-family: ITC Century W01 Book !important;
     color:#989484 !important;
      
 }
-.section-container.accordion.map-accordion > section > .title > a:hover {
+.accordion.map-accordion > section > .title > a:hover {
     color:black !important;
 }
 .section-container.accordion.map-accordion > section.active > .title > a{
-      color:black !important;
+    color:black !important;
 }
 .section-container.accordion.map-accordion > section > .content > ol > li {
     font-size: 10pt !important;
@@ -176,6 +202,11 @@ hr {
 
 .section-container.vertical-tabs{
   background-color:#efe9e0; 
+}
+
+.everything{
+    background-color:#efe9e0; 
+    height:100%;
 }
 
 .content{
