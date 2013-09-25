@@ -15,10 +15,7 @@
         <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/9c63ad8b-0542-46ff-9c1d-b98c849ab9eb.css"/>
         <link href="javascripts/lightbox/css/lightbox.css" rel="stylesheet" />
         <script type="text/javascript" src="javascripts/ejs_0.9_alpha_1_production.js"></script>
-
-
-
-
+        <script type="text/javascript" src="javascripts/underscore.js"></script>
 
         <script src="javascripts/vendor/custom.modernizr.js"></script>
 
@@ -34,10 +31,10 @@
         <section id='main-content' style="height:100%;">
             <div class="row" style="height:100%;">
                 <div class="small-12 columns" style="height:100%;">
-                    <div class="everything">
+                     <div class="everything">
                     	<div class="small-3 columns" style="padding-top:20px;padding-right:0px;padding-left:20px;">
                     	  <a renders-this="#building_html" class="logo" href="#"><img style="max-width:180px;" class="cent" src="images/Logo.gif"/></a>
-                    	  <div class="sidebar" style="padding-left:5px;">
+                    	  <div class="sidebar" style="padding-left:5px;position:relative;height:100%;">
                     	  	<a renders-this="#building_html" href="#">THE BUILDING</a><br/>
                     	  	<a renders-this="#rez_html" href="#" id="rez">RESIDENCES</a><br/>
 	                    	  	<div class="sub" id="rez_sub" style="display:none;">
@@ -62,12 +59,17 @@
                     	  	<a renders-this="#contact_html" href="#">Contact</a><br/>
                     	  	<a renders-this="#register_html" href="#">Register</a><br/>
                     	  	<a renders-this="#legal_html" href="#">Legal</a><br/>
+                            
                     	  </div>
+                          <div style="font-size:10pt;margin-top:100%;">
+                                Alfa Development © 2013
+                            </div>
 
                     	</div>
-                    	<div class="small-9 columns content-area">
+                    	<div class="small-9 columns content-area" style="min-height: 100%;">
                     	
                     	</div>
+                    </div>
                     </div>
                 </div>  
             </div>
@@ -152,7 +154,7 @@
 
         <div id="kitchens_html" style="display:none;">
           <div class="head">
-            Residences > Kitchens <hr>
+            Residences › Kitchens <hr>
           </div>
           <ul data-orbit data-options="timer:false;slide_number:false;">
                 <li>
@@ -187,7 +189,7 @@
 
         <div id="bathrooms_html" style="display:none;">
           <div class="head">
-            Residences > Bathrooms <hr>
+            Residences › Bathrooms <hr>
           </div>
           <ul data-orbit data-options="timer:false;slide_number:false;">
                 <li>
@@ -447,8 +449,8 @@
               </div>
             </div>
             <div class="large-8 columns">
-              <a href="images/Map.jpg" data-lightbox="Map">
-                <img class="cent white-border" src="images/Map.jpg" />
+              <a href="images/Map.jpg" data-reveal-id="myModal">
+                <img class="cent white-border" src="images/Map.jpg" id="map_img" />
               </a>
             </div>
           </div>
@@ -725,7 +727,7 @@
             <div class="head">
                                     Register <hr>
                                 </div>
-                                <form class='custom'>
+                                <form class='custom' style="font-size:10pt;">
                                   <div class="row">
                                       <div class="large-4 columns">
                                           <label for='fname'>First Name*</label>
@@ -834,6 +836,97 @@
                             </div>
         </div>
 
+        <div id="myModal" class="reveal-modal large">
+            <div class="row">
+            <div class="large-4 columns">
+              <div class="section-container accordion modal map-accordion" data-section="accordion">
+                                      <section>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#" style="border-top:0!important;">SHOPPING</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Apple Store</li>
+                                            <li>Burberry</li>
+                                            <li>Commes des Garcons</li>
+                                            <li>Kiehls</li>
+                                            <li>Marc Jacobs</li>
+                                            <li>Diane von Furstenberg</li>
+                                            <li>Theory</li>
+                                            <li>Jeffrey</li>
+                                            <li>Alexander McQueen</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#">FOOD & WINE<br/>MARKETS</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Barbuto</li>
+                                            <li>Del Posto</li>
+                                            <li>Morimoto</li>
+                                            <li>Pastis</li>
+                                            <li>Alison Eighteen</li>
+                                            <li>Cafe Cluny</li>
+                                            <li>Corner Bistro</li>
+                                            <li>Spice Market</li>
+                                            <li>Crispo</li>
+                                            <li>The Darby</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#">OUTDOOR/<br/>RECREATIONAL/<br/>WELLNESS</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Chelsea Piers</li>
+                                            <li>The Highline</li>
+                                            <li>Integral Yoga</li>
+                                            <li>Hudson River Park</li>
+                                            <li>Bleecker Playground</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#">NIGHTLIFE/HOTELS/<br/>ENTERTAINMENT</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Gansevoort</li>
+                                            <li>Maritime</li>
+                                            <li>SoHo House</li>
+                                            <li>Norwood Club</li>
+                                            <li>Highline Ballroom</li>
+                                            <li>The Standard</li>
+                                            <li>Joyce Theater</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+                                      <section>
+                                        <p class="title" data-section-title><a class="close-accordion-hack" href="#" style="border-bottom:2px solid black;">RESTAURANTS</a></p>
+                                        <div class="content" data-section-content>
+                                          <p><ol>
+                                            <li>Barbuto</li>
+                                            <li>Del Posto</li>
+                                            <li>Morimoto</li>
+                                            <li>Pastis</li>
+                                            <li>Alison Eighteen</li>
+                                            <li>Cafe Cluny</li>
+                                            <li>Corner Bistro</li>
+                                            <li>Spice Market</li>
+                                            <li>Crispo</li>
+                                            <li>The Darby</li>
+                                          </ol></p>
+                                        </div>
+                                      </section>
+              </div>
+            </div>
+            <div class="large-8 columns">
+              <a href="images/Map.jpg">
+                <img class="white-border" style="max-width:100%;max-height:100%;" src="images/Map.jpg" id="map_img" />
+              </a>
+            </div>
+          </div>
+            <a class="close-reveal-modal"><img src="images/Close.png"></img></a>
+          </div>
+
 
 
 
@@ -882,54 +975,24 @@
         <script>
             $(document).foundation();
             $(document).ready(function() {
-                    var htmlString = $("#building_html").html();
-                    $(".content-area").html(htmlString);
-                    if ($('.orbit-container ul').height() === 0) {
+                   // intizialize content area from building_html div and enable left/right arrows
+                   var new_contents = $('#building_html').contents();
+                   $(".content-area").append(new_contents);
+
+                   $(".content-area > .controls").on('click','img.left_arrow', function(event){
+                      $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
+                   });
+                   $(".content-area > .controls").on('click','img.right_arrow', function(event){
+                      $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
+                   });  
+                  //resize orbit-container to fit slideshow contents
+                  if ($('.orbit-container ul').height() === 0) {
                             console.log("height is zero")
                             //$(window).trigger('resize');
                             $('.orbit-container ul').height(360);
                         }
-
-
-
-                // function windowHeight() {
-                //     var myHeight = 0;
-                //     if( typeof( window.innerWidth ) == 'number' ) {
-                //         //Non-IE
-                //         myHeight = window.innerHeight;
-                //     } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-                //         //IE 6+ in 'standards compliant mode'
-                //         myHeight = document.documentElement.clientHeight;
-                //     } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-                //         //IE 4 compatible
-                //         myHeight = document.body.clientHeight;
-                //     }
-                //       return myHeight;
-                // }
-
-                // var h = windowHeight();
-                // $("").css("height", h);
-
-
-
-
-
-
-                $(".parent-nav").click(function(event){
-                    $(event.currentTarget).parent().find('.child-nav').toggle();
-                });
-
-                $("a.close-accordion-hack").click(function(event){
-                    console.log("here");
-                    if($(event.currentTarget).parent().parent().hasClass('active')){
-                     window.setTimeout(function(){
-                        $(event.currentTarget).parent().parent().removeClass('active')
-                     }, 200);
-                    }
-                });
-
-
-                 $("#rez").click(function(event) {
+                //handlers for sub links
+                $("#rez").click(function(event) {
                  	  if ($(event.currentTarget).hasClass("opened")){
                  	    $("#rez_sub").slideUp("slow", function() {
                  	    	$(event.currentTarget).removeClass("opened");
@@ -941,7 +1004,6 @@
                       });
                  	  }
                 });
-
                 $("#amen").click(function(event) {
                  	  if ($(event.currentTarget).hasClass("opened")){
                  	    $("#amen_sub").slideUp("slow", function() {
@@ -955,74 +1017,75 @@
                  	  }
                 });
 
+                // $("a[data-lightbox]").click(function(e){
+                //     setTimeout(function(){ $("lb-").height($(".content-area").height()+40); },100);
+                //     });
 
 
+                //click handler for sidebar links
                 $(".sidebar a").click(function(event){
+                   //modal for map
+                   // $("#map_img").click(function() {
+                   //   $("#myModal").reveal();
+                   //   alert('hi');
+                   // });
+                    
+
+
+
+                    //for hover colors
                     $(".sidebar a").removeClass("chosen");
                 	$(event.currentTarget).toggleClass("chosen");
 
-                    var a = $(event.currentTarget).attr("renders-this");
-                    var htmlString = $(a).html();
-                    $(".content-area").html(htmlString);
+                    var page_divs = ['#building_html', '#rez_html', '#kitchens_html', '#bathrooms_html', '#penthouses_html', '#amenities_html', '#open_air_html', '#neigh_html', '#map_html', '#avail_html', '#facts_html', '#team_html', '#press_html', '#contact_html', '#register_html', '#legal_html']
+
+                    // store and pull correct html contents from the hidden divs
+                    var empty_div;
+                    $.each(page_divs, function(index, value){ 
+                          if ($(value).is(':empty')){
+                             empty_div = $(value);
+                          } 
+                    });
+                    var current_contents = $(".content-area").contents();
+                    empty_div.append(current_contents);
+                    var id_to_render = $(event.currentTarget).attr("renders-this");
+                    var new_contents = $(id_to_render).contents();    
+                    $(".content-area").empty().append(new_contents);
+
+                    //resize everything div to fit contents (why doesnt this shrink?)
+                    setTimeout(function(){ $(".everything").height($(".content-area").height()+40); },100);
+
+
+                    //collapse on click for map accordion
+                    $(".map-accordion").on('click', 'a.close-accordion-hack', function(event){
+                    if($(event.currentTarget).parent().parent().hasClass('active')){
+                        window.setTimeout(function(){
+                        $(event.currentTarget).parent().parent().removeClass('active')
+                     }, 100);
+                    }
+                    });  
+
+                    $(".content-area > .controls").on('click','img.left_arrow', function(event){
+                      $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
+                    });
+                    $(".content-area > .controls").on('click','img.right_arrow', function(event){
+                      $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
+                    });     
 
                 });
 
-                $(".content-area > .controls > .left_arrow").click(function(event){
-                    $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $(".content-area > .controls > .right_arrow").click(function(event){
-                    $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
-                });
-                  $("section#building2 > .content > .controls > .left_arrow").click(function(event){
-                    $("section#building2 > .content > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $("section#building2 > .content > .controls > .right_arrow").click(function(event){
-                    $("section#building2 > .content > .orbit-container > .orbit-next").trigger( "click" );
-                });
-                $("section#residences > .content > .controls > .left_arrow").click(function(event){
-                    $("section#residences > .content > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $("section#residences > .content > .controls > .right_arrow").click(function(event){
-                    $("section#residences > .content > .orbit-container > .orbit-next").trigger( "click" );
-                });
-                $("section#penthouses > .content > .controls > .left_arrow").click(function(event){
-                    $("section#penthouses > .content > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $("section#penthouses > .content > .controls > .right_arrow").click(function(event){
-                    $("section#penthouses > .content > .orbit-container > .orbit-next").trigger( "click" );
-                });
-                $("section#amenities > .content > .controls > .left_arrow").click(function(event){
-                    $("section#amenities > .content > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $("section#amenities > .content > .controls > .right_arrow").click(function(event){
-                    $("section#amenities > .content > .orbit-container > .orbit-next").trigger( "click" );
-                });
-                $("section#neighborhood > .content > .controls > .left_arrow").click(function(event){
-                    $("section#neighborhood > .content > .orbit-container > .orbit-prev").trigger( "click" );
-                });
-                $("section#neighborhood > .content > .controls > .right_arrow").click(function(event){
-                    $("section#neighborhood > .content > .orbit-container > .orbit-next").trigger( "click" );
-                });
-
-                $("section#building1 > .content > .orbit-container > .orbit-bullets").insertAfter(("section#building1 > .content > .controls"));
-                $("section#building2 > .content > .orbit-container > .orbit-bullets").insertAfter(("section#building2 > .content > .controls"));
-                $("section#residences > .content > .orbit-container > .orbit-bullets").insertAfter(("section#residences > .content > .controls"));
-                $("section#penthouses > .content > .orbit-container > .orbit-bullets").insertAfter(("section#penthouses > .content > .controls"));
-                $("section#amenities > .content > .orbit-container > .orbit-bullets").insertAfter(("section#amenities > .content > .controls"));
-                $("section#neighborhood > .content > .orbit-container > .orbit-bullets").insertAfter(("section#neighborhood > .content > .controls"));
+                 
+                // $("section#building1 > .content > .orbit-container > .orbit-bullets").insertAfter(("section#building1 > .content > .controls"));
+                // $("section#building2 > .content > .orbit-container > .orbit-bullets").insertAfter(("section#building2 > .content > .controls"));
+                // $("section#residences > .content > .orbit-container > .orbit-bullets").insertAfter(("section#residences > .content > .controls"));
+                // $("section#penthouses > .content > .orbit-container > .orbit-bullets").insertAfter(("section#penthouses > .content > .controls"));
+                // $("section#amenities > .content > .orbit-container > .orbit-bullets").insertAfter(("section#amenities > .content > .controls"));
+                // $("section#neighborhood > .content > .orbit-container > .orbit-bullets").insertAfter(("section#neighborhood > .content > .controls"));
                
 
 
 
-                $(".orbit-slides-container, .orbit-prev, .orbit-next").mouseenter(function(){
-                  $(".orbit-prev, .orbit-next").stop().animate({'opacity':'1'}, 400);
-                }).mouseleave(function(){
-                  
-                  $(".orbit-prev, .orbit-next").stop().animate({'opacity':'0'}, 400);
-                });
-
                 $('.sidebar a, .logo').on('click', function() {
-                    console.log('hi');
                     setTimeout(function() {
                         if ($('.orbit-container ul').height() === 0) {
                             console.log("height is zero")
