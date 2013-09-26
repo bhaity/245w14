@@ -260,13 +260,13 @@ hr {
 
 .head{
     padding-top:5px !important;
-	margin-bottom:50px;
+	margin-bottom:24px;
 	font-family: ITCCenturyW01-BookItali;
 	font-size: 24pt;
 }
 
 .white-border{
-    border: 10px solid white;
+    border: 4px solid white;
 }
 
 .cent{
