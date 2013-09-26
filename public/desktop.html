@@ -29,10 +29,16 @@
             
         </header>
         <section id='main-content' style="height:100%;">
-            <div class="row" style="min-height:100%;">
+            <div class="row" style="min-height:100%;background-color:#efe9e0;position:relative;">\
+                <div id="copyright">
+                                Alfa Development © 2013
+                            </div>
+                
                 <div class="small-12 columns" style="min-height:100%;">
+                    
+                    
                      <div class="everything" style="min-height:100%">
-                        <div class="row" style="background-color:#efe9e0">
+                        <div class="row" style="background-color:#efe9e0; min-height:100%;">
                     	<div class="small-3 columns" style="padding-top:20px;padding-right:0px;padding-left:20px;">
                     	  <a renders-this="#building_html" class="logo" href="#"><img style="max-width:180px;" class="cent" src="images/Logo.gif"/></a>
                     	  <div class="sidebar" style="padding-left:5px;position:relative;height:100%;">
@@ -62,10 +68,6 @@
                     	  	<a renders-this="#legal_html" href="#">Legal</a><br/>
                             
                     	  </div>
-                          <div style="font-size:10pt;margin-top:100%;margin-bottom:5pt;">
-                                Alfa Development © 2013
-                            </div>
-
                     	</div>
                     	<div class="small-9 columns content-area" style="min-height: 100%;">
                     	
@@ -558,19 +560,19 @@
                                                         <a href="#" data-orbit-link="3C"> 3C </a>
                                                      </td>
                                                      <td>
-                                                        South
+                                                        <a href="#" data-orbit-link="3C"> South </a>
                                                      </td>
                                                      <td>
-                                                        892
+                                                        <a href="#" data-orbit-link="3C"> 892 </a>
                                                      </td>
                                                      <td>
-                                                        1.36M
+                                                        <a href="#" data-orbit-link="3C"> 1.36M </a>
                                                      </td>
                                                      <td>
-                                                        $1,161
+                                                        <a href="#" data-orbit-link="3C"> $1,161 </a>
                                                      </td>
                                                      <td>
-                                                        $331
+                                                        <a href="#" data-orbit-link="3C"> $331 </a>
                                                      </td>
                                                      <td>
                                                         <a href="images/Floorplan3.jpg" download="Floorplan3"><u>Download PDF</u></a>
@@ -987,6 +989,10 @@
                    $(".content-area > .controls").on('click','img.right_arrow', function(event){
                       $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
                    });  
+                   
+                   //move orbit bullets to after the slideshow arrows
+                   $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+
                   //resize orbit-container to fit slideshow contents
                   if ($('.orbit-container ul').height() === 0) {
                             console.log("height is zero")
@@ -1055,7 +1061,7 @@
                     $(".content-area").empty().append(new_contents);
 
                     //resize everything div to fit contents (why doesnt this shrink?)
-                    setTimeout(function(){ $(".everything").height($(".content-area").height()+40); },100);
+                    //setTimeout(function(){ $(".everything").height($(".content-area").height()+40); },100);
 
 
                     //collapse on click for map accordion
@@ -1074,6 +1080,8 @@
                       $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
                     });     
 
+                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+
                 });
 
                  
@@ -1091,8 +1099,8 @@
                     setTimeout(function() {
                         if ($('.orbit-container ul').height() === 0) {
                             console.log("height is zero")
-                            //$(window).trigger('resize');
-                            $('.orbit-container ul').height(360);
+                            $(window).trigger('resize');
+                            //$('.orbit-container ul').height(360);
                         }
                     }, 100);
                 });
