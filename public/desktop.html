@@ -979,51 +979,52 @@
         <script>
             $(document).foundation();
             $(document).ready(function() {
-                   // intizialize content area from building_html div and enable left/right arrows
-                   var new_contents = $('#building_html').contents();
-                   $(".content-area").append(new_contents);
+                    // intizialize content area from building_html div and enable left/right arrows
+                    var new_contents = $('#building_html').contents();
+                    $(".content-area").append(new_contents);
 
-                   $(".content-area > .controls").on('click','img.left_arrow', function(event){
+                    $(".content-area > .controls").on('click','img.left_arrow', function(event){
                       $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
-                   });
-                   $(".content-area > .controls").on('click','img.right_arrow', function(event){
+                    });
+                    $(".content-area > .controls").on('click','img.right_arrow', function(event){
                       $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
-                   });  
+                    });  
                    
-                   //move orbit bullets to after the slideshow arrows
-                   $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+                    //move orbit bullets to after the slideshow arrows
+                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
 
-                  //resize orbit-container to fit slideshow contents
-                  if ($('.orbit-container ul').height() === 0) {
+                   //resize orbit-container to fit slideshow contents
+                    if ($('.orbit-container ul').height() === 0) {
                             console.log("height is zero")
-                            //$(window).trigger('resize');
-                            $('.orbit-container ul').height(360);
-                        }
-                //handlers for sub links
-                $("#rez").click(function(event) {
-                 	  if ($(event.currentTarget).hasClass("opened")){
-                 	    $("#rez_sub").slideUp("slow", function() {
-                 	    	$(event.currentTarget).removeClass("opened");
-                 	    });
-                 	  }
-                 	  else{
-                      $("#rez_sub").slideDown("slow", function() {
-                      	$(event.currentTarget).addClass("opened");
-                      });
-                 	  }
-                });
-                $("#amen").click(function(event) {
-                 	  if ($(event.currentTarget).hasClass("opened")){
-                 	    $("#amen_sub").slideUp("slow", function() {
-                 	    	$(event.currentTarget).removeClass("opened");
-                 	    });
-                 	  }
-                 	  else{
-                      $("#amen_sub").slideDown("slow", function() {
-                      	$(event.currentTarget).addClass("opened");
-                      });
-                 	  }
-                });
+                            $(window).trigger('resize');
+                            //$('.orbit-container ul').height(360);
+                    }
+
+                    //handlers for sub links
+                    $("#rez").click(function(event) {
+                     	  if ($(event.currentTarget).hasClass("opened")){
+                     	    $("#rez_sub").slideUp("slow", function() {
+                     	    	$(event.currentTarget).removeClass("opened");
+                     	    });
+                     	  }
+                     	  else{
+                          $("#rez_sub").slideDown("slow", function() {
+                          	$(event.currentTarget).addClass("opened");
+                          });
+                     	  }
+                    });
+                    $("#amen").click(function(event) {
+                     	  if ($(event.currentTarget).hasClass("opened")){
+                     	    $("#amen_sub").slideUp("slow", function() {
+                     	    	$(event.currentTarget).removeClass("opened");
+                     	    });
+                     	  }
+                     	  else{
+                          $("#amen_sub").slideDown("slow", function() {
+                          	$(event.currentTarget).addClass("opened");
+                          });
+                     	  }
+                    });
 
                 // $("a[data-lightbox]").click(function(e){
                 //     setTimeout(function(){ $("lb-").height($(".content-area").height()+40); },100);
@@ -1032,15 +1033,7 @@
 
                 //click handler for sidebar links
                 $(".sidebar a").click(function(event){
-                   //modal for map
-                   // $("#map_img").click(function() {
-                   //   $("#myModal").reveal();
-                   //   alert('hi');
-                   // });
                     
-
-
-
                     //for hover colors
                     $(".sidebar a").removeClass("chosen");
                 	$(event.currentTarget).toggleClass("chosen");
@@ -1081,17 +1074,7 @@
                     });     
 
                     $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
-
                 });
-
-                 
-                // $("section#building1 > .content > .orbit-container > .orbit-bullets").insertAfter(("section#building1 > .content > .controls"));
-                // $("section#building2 > .content > .orbit-container > .orbit-bullets").insertAfter(("section#building2 > .content > .controls"));
-                // $("section#residences > .content > .orbit-container > .orbit-bullets").insertAfter(("section#residences > .content > .controls"));
-                // $("section#penthouses > .content > .orbit-container > .orbit-bullets").insertAfter(("section#penthouses > .content > .controls"));
-                // $("section#amenities > .content > .orbit-container > .orbit-bullets").insertAfter(("section#amenities > .content > .controls"));
-                // $("section#neighborhood > .content > .orbit-container > .orbit-bullets").insertAfter(("section#neighborhood > .content > .controls"));
-               
 
 
 
