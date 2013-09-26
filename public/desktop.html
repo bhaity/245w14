@@ -1087,6 +1087,25 @@
                         }
                     }, 100);
                 });
+
+
+
+			
+
+preload([
+    'images/Residences.jpg',
+//    'img/anotherOne.jpg',
+//    'img/blahblahblah.jpg'
+	]);
+
+		function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        (new Image()).src = this;
+        // Alternatively you could use:
+//        $('<img/>')[0].src = this;
+    });
+}
+
             });
         </script>
     </body>
