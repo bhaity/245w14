@@ -3,6 +3,11 @@
 	font-size: 16pt;
 }
 
+p.title{
+	font-family: ITC Century W01 Bold;
+}
+
+
 .white-border{
     border: 5px solid white;
 }

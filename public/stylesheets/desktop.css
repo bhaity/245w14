@@ -1,6 +1,6 @@
 html{
     height:100%;
-    background-image: url("../images/BG_tile.jpg");
+    background-image: url("../images/BG_tile2.jpg");
 
 }
 
@@ -44,6 +44,16 @@ body p, ul, table{
 
 }
 
+table tr td a {
+    display:block;
+    height:100%;
+    width:100%;
+    color:black;
+    text-decoration:none;
+}
+
+
+
 .sidebar a{
     color:#989484;
     line-height:20px;
@@ -84,7 +94,6 @@ h4{
 
 .availabilities_table a{
     color:black;
-    text-decoration: underline;
 }
 .availabilities_table tr:first-child{
     font-weight: bold;
