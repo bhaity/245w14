@@ -276,8 +276,8 @@ hr {
 }
 
 .cent.white-border{
-    max-width:500px !important;
-    max-height: 400px !important;
+    max-width:100% !important;
+    max-height: 450px !important;
 }
 
 .orbit-constraint{
