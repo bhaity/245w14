@@ -3,8 +3,25 @@
 	font-size: 16pt;
 }
 
-p.title{
+p.title.main-nav{
 	font-family: ITC Century W01 Bold;
+	background-color: transparent !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-top: 2px solid black !important;
+	margin-bottom:0;
+}
+
+p.title.main-nav a{
+	padding: 0.625em;
+color: #333333;
+font-size: 0.875em;
+background: none;
+font-weight: bold;
+font-size: 1.2em;
+width: 100%;
+display: inline-block;
+white-space: nowrap;
 }
 
 
@@ -15,6 +32,20 @@ p.title{
 .constrain{
 	max-width:100%;
 }
+
+hr{
+	border: solid black;
+	border-width: 1px 0 0;
+}
+
+.orbit-bullets{
+	//display: inline;
+	position:absolute;
+	top:20px !important;
+	right:0;
+	z-index: 40;
+}
+
 
 /*.orbit-bullets{
 	top: -515px;
