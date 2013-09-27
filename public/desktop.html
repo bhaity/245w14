@@ -337,17 +337,22 @@
           <ul data-orbit data-options="timer:false;slide_number:false;">
                 <li>
                     <a href="images/Neighborhood.jpg" data-lightbox="Neighborhood">
-                      <img class="cent white-border" src="images/Neighborhood.jpg" />
+                      <img class="cent white-border" src="images/Neigh1.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="images/Neighborhood2.jpg" data-lightbox="Neighborhood">
-                      <img class="cent white-border" src="images/Neighborhood2.jpg" />
+                      <img class="cent white-border" src="images/Neigh2.jpg" />
                     </a>
                 </li>
                 <li>
                     <a href="images/Neighborhood3.jpg" data-lightbox="Neighborhood">
-                      <img class="cent white-border" src="images/Neighborhood3.jpg" />
+                      <img class="cent white-border" src="images/Neigh3.jpg" />
+                    </a>
+                </li>
+                <li>
+                    <a href="images/Neighborhood3.jpg" data-lightbox="Neighborhood">
+                      <img class="cent white-border" src="images/Neigh4.jpg" />
                     </a>
                 </li>
             </ul>
@@ -659,7 +664,7 @@
             <div class="head" style="margin-bottom:20px;">
                                     Team <hr>
                                 </div>
-                                <img style="max-width: 100% !important;" class="cent white-border" src='images/Team.jpg'/>
+                                <img style="max-width: 100% !important;" class="cent white-border" src='images/Alfa_Team.jpg'/>
                                 <p>
                                     <br/>
                                     Composed of longtime residents of the downtown Manhattan area, the Alfa Development team has firsthand knowledge of the downtown
@@ -993,7 +998,9 @@
                     });  
                    
                     //move orbit bullets to after the slideshow arrows
-                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+                    //$(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > img.cent.white-border"));
+
 
                    //resize orbit-container to fit slideshow contents
                     if ($('.orbit-container ul').height() === 0) {
@@ -1070,12 +1077,18 @@
 
                     $(".content-area > .controls").on('click','img.left_arrow', function(event){
                       $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
+                      $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > img.cent.white-border"));
+
                     });
                     $(".content-area > .controls").on('click','img.right_arrow', function(event){
                       $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
+                      $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > img.cent.white-border"));
+
                     });     
 
-                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+                    //$(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > img.cent.white-border"));
+
                 });
 
 

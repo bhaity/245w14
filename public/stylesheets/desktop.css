@@ -39,7 +39,8 @@ body p, ul, table{
 
 .sidebar{
     margin-top:20%;
-    font-family: ITC Century W01 Book !important; 
+    //font-family: ITC Century W01 Book !important; 
+    font-family: 'museo700';
     font-weight: bold;
 
 
@@ -90,7 +91,8 @@ table tr td a {
 
 
 h4{
-  font-family: ITC Century W01 Book !important;  
+  //font-family: ITC Century W01 Book !important;  
+  font-family: 'museo700';
   margin-bottom:10px;
   font-size: 14pt;
 }
@@ -137,7 +139,8 @@ table.availabilities_table tr:nth-of-type(even) {
     border-bottom:1px solid black;
     border-top:1px solid black;
     font-size: 12pt !important;
-    font-family: ITC Century W01 Book !important;
+    font-family: 'museo700';
+    //font-family: ITC Century W01 Book !important;
     color:#989484 !important;
      
 }
@@ -260,8 +263,9 @@ hr {
 
 .head{
     padding-top:5px !important;
-	margin-bottom:24px;
-	font-family: ITCCenturyW01-BookItali;
+	margin-bottom:40px;
+	//font-family: ITCCenturyW01-BookItali;
+    font-family: Redwood W01 Regular;
 	font-size: 24pt;
 }
 
@@ -290,6 +294,21 @@ hr {
 .orbit-prev, .orbit-next{
   display:none;
 }
+
+.orbit-slides-container{
+    min-height:450px;
+}
+
+@font-face {
+    font-family: 'museo700';
+    src: url('webfontkit/museo700-regular-webfont.eot');
+    src: url('webfontkit/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/museo700-regular-webfont.woff') format('woff'),
+         url('webfontkit/museo700-regular-webfont.ttf') format('truetype'),
+         url('webfontkit/museo700-regular-webfont.svg#museo700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 
 /*.orbit-bullets{
         position: absolute;
