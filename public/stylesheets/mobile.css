@@ -38,6 +38,8 @@ hr{
 	border-width: 1px 0 0;
 }
 
+.touch .orbit-bullets { display: block !important; }
+
 .orbit-bullets{
 	//display: inline;
 	position:absolute;
