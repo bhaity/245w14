@@ -127,9 +127,7 @@
                             </div>
                         </section>
                         <section>
-                          <div style="position:relative;">
                             <p class="title main-nav" data-section-title><a href="#map">Map</a></p>
-                          </div>
                             <div class="content" data-section-content data-slug="map">
                                 <img class="white-border constrain" src='images/Map.jpg'>
                                 <div>
@@ -558,15 +556,25 @@
               if (($(window).width() > 800) && (document.location.pathname == '/mobile')) {
                 document.location = "/";
               }
+
+              $(".map-accordion").on('click', 'a.close-accordion-hack', function(event){
+                    if($(event.currentTarget).parent().parent().hasClass('active')){
+                        window.setTimeout(function(){
+                        $(event.currentTarget).parent().parent().removeClass('active')
+                     }, 100);
+                    }
+                    });  
    
 
-                $(".orbit-slides-container").mouseenter(function(){
-                  $(".orbit-prev, .orbit-next").stop().animate({'opacity':'1'}, 400);
-                }).mouseleave(function(){
-                  $(".orbit-prev, .orbit-next").stop().animate({'opacity':'0'}, 400);
-                });
 
-                $('.section-container .title').on('click', function() {
+                $('.main-nav').on('click', 'p.title', function(event) {
+                  $('p.title.main-nav').css("background-color","transparent !important");
+                   setTimeout(function() {
+                     if($(event.currentTarget).parent().parent().hasClass('active')){
+                      $(event.currentTarget).css("background-color","#efeee9 !important");
+                     }
+                    }, 20);
+                   
                     setTimeout(function() {
                         $("section.active > .content > .orbit-container > .orbit-bullets").insertAfter($("section.active > p.title.main-nav"));
                         //console.log($('.section-container section.active .orbit-container ul').height());

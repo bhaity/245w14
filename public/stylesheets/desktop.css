@@ -148,7 +148,7 @@ table.availabilities_table tr:nth-of-type(even) {
     color:black !important;
 }
 .accordion.modal.map-accordion > section > .title > a:hover {
-    background-color:#efe9e0 !important;
+    background-color:#efeee9 !important;
 }
 .section-container.accordion.map-accordion > section.active > .title > a{
     color:black !important;
@@ -219,7 +219,7 @@ hr {
 .section-container.accordion > section.active > .title,
 .section-container.accordion > .section.active > .title {
 
-  background: #efe9e0;
+  background: #efeee9;
   border:none;
 
 	}
@@ -228,11 +228,11 @@ hr {
 }
 
 .section-container.vertical-tabs{
-  background-color:#efe9e0; 
+  background-color:#efeee9; 
 }
 
 .everything{
-    background-color:#efe9e0; 
+    background-color:#efeee9; 
     min-height:100%;
 }
 
@@ -266,7 +266,7 @@ hr {
 	margin-bottom:40px;
 	//font-family: ITCCenturyW01-BookItali;
     font-family: Redwood W01 Regular;
-	font-size: 24pt;
+	font-size: 30pt;
 }
 
 .white-border{

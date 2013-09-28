@@ -430,7 +430,7 @@ body {
 
 /* line 272, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_global.scss */
 body {
-  background: #efe9e0;
+  background: #efeee9;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -3731,7 +3731,7 @@ label.error {
 .section-container.horizontal-nav > .section > .title,
 .section-container.accordion > section > .title,
 .section-container.accordion > .section > .title {
-  background-color: #efe9e0;
+  background-color: #efeee9;
   cursor: pointer;
   border: solid 1px #cccccc;
 }
@@ -3773,7 +3773,7 @@ label.error {
 .section-container.accordion > section > .content,
 .section-container.accordion > .section > .content {
   padding: 0.9375em;
-  background-color: #efe9e0;
+  background-color: #efeee9;
   border: solid 1px #cccccc;
 }
 /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -3822,7 +3822,7 @@ label.error {
 .section-container.horizontal-nav > .section.active > .title,
 .section-container.accordion > section.active > .title,
 .section-container.accordion > .section.active > .title {
-  background: #efe9e0;
+  background: #efeee9;
   border: solid 1px #cccccc;
 }
 
@@ -3910,7 +3910,7 @@ label.error {
 }
 /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .section-container.tabs > section > .title, .section-container.tabs > .section > .title {
-  background-color: #efe9e0;
+  background-color: #efeee9;
   cursor: pointer;
   border: solid 1px #cccccc;
 }
@@ -3928,7 +3928,7 @@ label.error {
 /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .section-container.tabs > section > .content, .section-container.tabs > .section > .content {
   padding: 0.9375em;
-  background-color: #efe9e0;
+  background-color: #efeee9;
   border: solid 1px #cccccc;
 }
 /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4008,7 +4008,7 @@ label.error {
   }
   /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.auto > section > .title, .section-container.auto > .section > .title {
-    background-color: #efe9e0;
+    background-color: #efeee9;
     cursor: pointer;
     border: solid 1px #cccccc;
   }
@@ -4026,7 +4026,7 @@ label.error {
   /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.auto > section > .content, .section-container.auto > .section > .content {
     padding: 0.9375em;
-    background-color: #efe9e0;
+    background-color: #efeee9;
     border: solid 1px #cccccc;
   }
   /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4126,7 +4126,7 @@ label.error {
   }
   /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-tabs > section > .title, .section-container.vertical-tabs > .section > .title {
-    background-color: #efe9e0;
+    background-color: #efeee9;
     cursor: pointer;
     border: none;
   }
@@ -4144,7 +4144,7 @@ label.error {
   /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-tabs > section > .content, .section-container.vertical-tabs > .section > .content {
     padding: 0.9375em;
-    background-color: #efe9e0;
+    background-color: #efeee9;
     border: solid 1px #cccccc;
   }
   /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4161,7 +4161,7 @@ label.error {
   }
   /* line 231, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-tabs > section.active > .title, .section-container.vertical-tabs > .section.active > .title {
-    background: #efe9e0;
+    background: #efeee9;
   }
   /* line 233, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a {
@@ -4177,7 +4177,7 @@ label.error {
   }
   /* line 260, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-tabs > section.active > .title, .section-container.vertical-tabs > .section.active > .title {
-    background-color: #efe9e0;
+    background-color: #efeee9;
   }
 
   /* line 347, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4255,7 +4255,7 @@ label.error {
   }
   /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-nav > section > .title, .section-container.vertical-nav > .section > .title {
-    background-color: #efe9e0;
+    background-color: #efeee9;
     cursor: pointer;
     border: solid 1px #cccccc;
   }
@@ -4273,7 +4273,7 @@ label.error {
   /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-nav > section > .content, .section-container.vertical-nav > .section > .content {
     padding: 0.9375em;
-    background-color: #efe9e0;
+    background-color: #efeee9;
     border: solid 1px #cccccc;
   }
   /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4290,7 +4290,7 @@ label.error {
   }
   /* line 231, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-nav > section.active > .title, .section-container.vertical-nav > .section.active > .title {
-    background: #efe9e0;
+    background: #efeee9;
   }
   /* line 233, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a {
@@ -4373,12 +4373,12 @@ label.error {
 
   /* line 368, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.horizontal-nav {
-    background: #efe9e0;
+    background: #efeee9;
     border: 1px solid #cccccc;
   }
   /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.horizontal-nav > section > .title, .section-container.horizontal-nav > .section > .title {
-    background-color: #efe9e0;
+    background-color: #efeee9;
     cursor: pointer;
     border: solid 1px #cccccc;
   }
@@ -4396,7 +4396,7 @@ label.error {
   /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.horizontal-nav > section > .content, .section-container.horizontal-nav > .section > .content {
     padding: 0.9375em;
-    background-color: #efe9e0;
+    background-color: #efeee9;
     border: solid 1px #cccccc;
   }
   /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4413,7 +4413,7 @@ label.error {
   }
   /* line 231, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.horizontal-nav > section.active > .title, .section-container.horizontal-nav > .section.active > .title {
-    background: #efe9e0;
+    background: #efeee9;
   }
   /* line 233, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
   .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a {
@@ -4480,7 +4480,7 @@ label.error {
 }
 /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .no-js .section-container > section > .title, .no-js .section-container > .section > .title {
-  background-color: #efe9e0;
+  background-color: #efeee9;
   cursor: pointer;
   border: solid 1px #cccccc;
 }
@@ -4498,7 +4498,7 @@ label.error {
 /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .no-js .section-container > section > .content, .no-js .section-container > .section > .content {
   padding: 0.9375em;
-  background-color: #efe9e0;
+  background-color: #efeee9;
   border: solid 1px #cccccc;
 }
 /* line 225, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
@@ -4515,7 +4515,7 @@ label.error {
 }
 /* line 231, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .no-js .section-container > section.active > .title, .no-js .section-container > .section.active > .title {
-  background: #efe9e0;
+  background: #efeee9;
 }
 /* line 233, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_section.scss */
 .no-js .section-container > section.active > .title a, .no-js .section-container > .section.active > .title a {
@@ -5359,7 +5359,8 @@ label.error {
   height: 100%;
   width: 100%;
   background: black;
-  background: rgba(239, 233, 225, 0.9);
+  background: #efeee9;
+  opacity:0.9;
   z-index: 98;
   display: none;
   top: 0;
@@ -5376,7 +5377,7 @@ label.error {
   height: auto;
   margin-left: -40%;
   width: 80%;
-  background-color: rgb(239, 233, 225);
+  background-color: #efeee9;
   padding: 1.25em;
   //border: solid 5px white;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
