@@ -9,6 +9,7 @@ p.title.main-nav{
 	background-color: transparent !important;
 	border-left: none !important;
 	border-right: none !important;
+	border-bottom: none !important;
 	border-top: 2px solid black !important;
 	margin-bottom:0;
 }
@@ -29,6 +30,10 @@ display: inline-block;
 white-space: nowrap;
 }
 
+/*section.active p.title.main-nav{
+  background-color:#efeee9;
+}
+*/
 
 .white-border{
     border: 5px solid white;

@@ -132,22 +132,26 @@
                                 <img class="white-border constrain" src='images/Map.jpg'>
                                 <div>
                                     <h3 STYLE="font-size:12pt">SELECTED NEARBY LOCATIONS</h3>
-                                    <ul class='inline-list'>
-                                        <li>Apple Store</li>
-                                        <li>Alexander Mc-Queen</li>
-                                        <li>Burberry</li>
-                                        <li>The Highline</li>
-                                        <li>Kiehls</li>
-                                        <li>Pastis</li>
-                                        <li>Alison Eighteen</li>
-                                        <li>Cafe Cluny</li>
-                                        <li>Corner Bistro</li>
-                                        <li>Spice Market</li>
-                                        <li>Marc Jacobs</li>
-                                        <li>Chelsea Piers</li>
-                                        <li>Theory</li>
-                                        <li>Jeffrey</li>
-                                    </ul>
+                                    <div class="row">
+                                    <div class='small-6 columns'>
+                                            Apple Store</br>
+                                            Alexander Mc-Queen</br>
+                                            Burberry</br>
+                                            The Highline</br>
+                                            Kiehls</br>
+                                            Pastis</br>
+                                            Alison Eighteen
+                                    </div>
+                                    <div class='small-6 columns'>
+                                            Cafe Cluny</br>
+                                            Corner Bistro</br>
+                                            Spice Market</br>
+                                            Marc Jacobs</br>
+                                            Chelsea Piers</br>
+                                            Theory</br>
+                                            Jeffrey
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -552,6 +556,8 @@
         <script>
             $(document).foundation();
             $(document).ready(function() {
+
+
                 //alert(document.location.pathname);
               if (($(window).width() > 800) && (document.location.pathname == '/mobile')) {
                 document.location = "/";
@@ -569,8 +575,17 @@
                     }
                     });  
    
+               $('section.active').find('p.title.main-nav').first().css("background-color","#efeee9 !important");
 
+               
 
+               // setTimeout(function() {
+               //       if($(event.currentTarget).closest('section').hasClass('active')){
+               //        $(event.currentTarget).css("background-color","#efeee9 !important");
+               //       }
+               //      }, 400);
+                   
+                
                 $('.main-nav').on('click', 'p.title', function(event) {
                   //if($(event.currentTarget).parent().parent().hasClass('active')){
                    // alert('hi');
@@ -585,7 +600,7 @@
                      if($(event.currentTarget).closest('section').hasClass('active')){
                       $(event.currentTarget).css("background-color","#efeee9 !important");
                      }
-                    }, 100);
+                    }, 399);
                    
                     setTimeout(function() {
                         $("section.active > .content > .orbit-container > .orbit-bullets").insertAfter($("section.active > p.title.main-nav"));
@@ -594,7 +609,7 @@
                             $(window).trigger('resize');
                             console.log('0');
                         }
-                    }, 100);
+                    },400);
                 });
             });
         </script>

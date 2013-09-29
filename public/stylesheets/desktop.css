@@ -8,12 +8,14 @@ html{
 body{
     font-family: Arial !important;
     height:100%;
+    min-width: 900px;
     /*font-family: Arial !important;
     font-size: 10pt;*/
 }
 
 body p, ul, table{
     font-size:10pt;
+
 }
 
 .content-area{
