@@ -112,7 +112,7 @@
                             <p class="title main-nav" data-section-title><a href="#neighbor">Neighborhood</a></p>
                           </div>
                             <div class="content" data-section-content data-slug="neighbor">
-                                <ul data-orbit data-options="timer:false;bullets:false;slide_number:false;bullets:true;">
+                                <ul data-orbit data-options="timer:false;bullets:true;slide_number:false;bullets:true;">
                                     <li><img class="white-border" src="images/Neighborhood.jpg" /></li>
                                     <li><img class="white-border" src="images/Neighborhood.jpg" /></li>
                                     <li><img class="white-border" src="images/Neighborhood.jpg" /></li>
@@ -501,7 +501,7 @@
                                 All dimensions are approximate and subject to normal construction variances and tolerances. We reserve the right to make changes due
                                 to unforeseen conditions and in accordance with the offering plan. For exact measurements you must hire our own architect or engineer.
                             </p>
-                            <img src='images/EQ_Logo.gif' />
+                            <img src='images/small-logo.gif' />
                           </div>
                         </section>
                     </div>
@@ -557,6 +557,10 @@
                 document.location = "/";
               }
 
+              // if($("p.title.main-nav").parent().parent().hasClass('active')){
+              //         $("p.title.main-nav").css("background-color","#efeee9 !important");
+              //        }
+
               $(".map-accordion").on('click', 'a.close-accordion-hack', function(event){
                     if($(event.currentTarget).parent().parent().hasClass('active')){
                         window.setTimeout(function(){
@@ -568,9 +572,17 @@
 
 
                 $('.main-nav').on('click', 'p.title', function(event) {
+                  //if($(event.currentTarget).parent().parent().hasClass('active')){
+                   // alert('hi');
+                     //    setTimeout(function(){
+                     //    $(event.currentTarget).parent().parent().removeClass('active')
+                     // }, 100);
+                    //}  
+
+
                   $('p.title.main-nav').css("background-color","transparent !important");
                    setTimeout(function() {
-                     if($(event.currentTarget).parent().parent().hasClass('active')){
+                     if($(event.currentTarget).closest('section').hasClass('active')){
                       $(event.currentTarget).css("background-color","#efeee9 !important");
                      }
                     }, 20);
