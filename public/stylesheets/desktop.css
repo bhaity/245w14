@@ -162,7 +162,7 @@ table.availabilities_table tr:nth-of-type(even) {
 }
 
 .map{
-  max-height:500px;
+  max-height:475px;
 }
 
 hr {
@@ -175,7 +175,7 @@ hr {
 }
 .orbit-bullets{
     float:right;
-    right:75px;
+    //right:75px;
 
 }
 /*.orbit-bullets{
@@ -285,7 +285,7 @@ hr {
 
 .cent.white-border{
     max-width:100% !important;
-    max-height: 450px !important;
+    max-height: 475px !important;
 }
 
 .orbit-constraint{
@@ -300,7 +300,7 @@ hr {
 }
 
 .orbit-slides-container{
-    min-height:450px;
+    min-height:475px;
 }
 
 @font-face {
