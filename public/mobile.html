@@ -52,6 +52,7 @@
                                     where the aesthetic of the past meets the
                                     efficiency of the future.
                                 </p>
+                                <p class="collapse">collapse</p>
                             </div>
                         </section>
                         <section>
@@ -563,19 +564,32 @@
                 document.location = "/";
               }
 
+              $("p.collapse").click(function(){
+                 $("section.active").removeClass("active");
+                 $('p.title.main-nav').css("background-color","transparent !important");
+              });
+
               // if($("p.title.main-nav").parent().parent().hasClass('active')){
               //         $("p.title.main-nav").css("background-color","#efeee9 !important");
               //        }
 
-              $(".map-accordion").on('click', 'a.close-accordion-hack', function(event){
-                    if($(event.currentTarget).parent().parent().hasClass('active')){
-                        window.setTimeout(function(){
-                        $(event.currentTarget).parent().parent().removeClass('active')
-                     }, 100);
-                    }
-                    });  
+              // $(".map-accordion").on('click', 'a.close-accordion-hack', function(event){
+              //       if($(event.currentTarget).parent().parent().hasClass('active')){
+              //           window.setTimeout(function(){
+              //           $(event.currentTarget).parent().parent().removeClass('active')
+              //        }, 100);
+              //       }
+              //       });  
    
                $('section.active').find('p.title.main-nav').first().css("background-color","#efeee9 !important");
+
+               // $("section.active > p.title").on('click', 'p.title.main-nav', function(){
+               //    alert('hi');
+               // });
+
+               $("html").on( "click", "section.active p.title.main-nav", function() {
+                 alert( 'HELLOOOO');
+                });
 
                
 
