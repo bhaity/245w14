@@ -61,9 +61,9 @@
                           </div>
                             <div class="content" data-section-content data-slug="residences">
                                 <ul data-orbit data-options="timer:false;slide_number:false;bullets:true;">
-                                    <li><img class="white-border" src="images/Residences.jpg" /></li>
-                                    <li><img class="white-border" src="images/Kitchen-TEMP.jpg" /></li>
-                                    <li><img class="white-border" src="images/Bathroom-TEMP.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Residences.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Kitchens.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Bathrooms.jpg" /></li>
                                 </ul>
                                 <p>
                                     Interiors engage the senses, with wide plank
@@ -80,7 +80,7 @@
                           </div>
                             <div class="content" data-section-content data-slug="ph">
                                 <ul data-orbit data-options="timer:false;slide_number:false;bullets:false;">
-                                    <li><img class="white-border" src="images/Penthouses.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Penthouse.jpg" /></li>
                                     <!-- <li><img class="white-border" src="images/Penthouses2.jpg" /></li>
                                     <li><img class="white-border" src="images/Penthouses3.jpg" /></li> -->
                                 </ul>
@@ -99,8 +99,8 @@
                           </div>
                             <div class="content" data-section-content data-slug="amenities">
                                 <ul data-orbit data-options="timer:false;slide_number:false;bullets:true;">
-                                    <li><img class="white-border" src="images/Amenities.jpg" /></li>
-                                    <li><img class="white-border" src="images/BetterLiving.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Amenities.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/BetterLiving.jpg" /></li>
                                     <li><img class="white-border" src="images/OpenAir.jpg" /></li>
                                 </ul>
                                 <p>
@@ -117,10 +117,10 @@
                           </div>
                             <div class="content" data-section-content data-slug="neighbor">
                                 <ul data-orbit data-options="timer:false;bullets:true;slide_number:false;bullets:true;">
-                                    <li><img class="white-border" src="images/Neigh1.jpg" /></li>
-                                    <li><img class="white-border" src="images/Neigh2.jpg" /></li>
-                                    <li><img class="white-border" src="images/Neigh3.jpg" /></li>
-                                    <li><img class="white-border" src="images/Neigh4.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Neigh1.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Neigh2.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Neigh3.jpg" /></li>
+                                    <li><img class="white-border" src="images/Crops/Neigh4.jpg" /></li>
                                 </ul>
                                 <p>
                                     One building at the heart of the crossroads of
@@ -607,9 +607,9 @@
                //    alert('hi');
                // });
 
-               $("html").on( "click", "section.active p.title.main-nav", function() {
-                 alert( 'HELLOOOO');
-                });
+               // $("html").on( "click", "section.active p.title.main-nav", function() {
+               //   alert( 'HELLOOOO');
+               //  });
 
                
 
@@ -642,10 +642,10 @@
                      if($(event.currentTarget).closest('section').hasClass('active')){
                       $(event.currentTarget).css("background-color","#efeee9 !important");
                      }
-                    }, 399);
+                    }, 400);
                    
                     setTimeout(function() {
-                        $("section.active > .content > .orbit-container > .orbit-bullets").insertAfter($("section.active > p.title.main-nav"));
+                        //$("section.active > .content > .orbit-container > .orbit-bullets").insertAfter($("section.active > p.title.main-nav"));
                         //console.log($('.section-container section.active .orbit-container ul').height());
                         if ($('.section-container section.active .orbit-container ul').height() === 0) {
                             $(window).trigger('resize');
