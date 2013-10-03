@@ -69,7 +69,7 @@
                                     Interiors engage the senses, with wide plank
                                     European oak flooring, custom paneled doors,
                                     crown moldings throughout, and black steel
-                                    framed windows.
+                                    framed windows. For more info see <a id="fact_link" href="/mobile#fact">fact sheet.</a>
                                 </p>
                                 <p class="collapse"><b>x</b> close</p>
                             </div>
@@ -575,6 +575,10 @@
             $(document).foundation();
             $(document).ready(function() {
 
+                $("#fact").click(function(){
+                  $('p.title.main-nav').css("background-color","transparent !important");
+                })
+
 
 
 
@@ -651,7 +655,7 @@
                             $(window).trigger('resize');
                             console.log('0');
                         }
-                    },400);
+                    },500);
                 });
             });
         </script>

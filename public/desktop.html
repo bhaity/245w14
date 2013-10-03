@@ -19,7 +19,10 @@
 
         <script src="javascripts/vendor/custom.modernizr.js"></script>
 
-         <script src="javascripts/lightbox/js/jquery-1.10.2.min.js"></script>
+        <script src="javascripts/lightbox/js/jquery-1.10.2.min.js"></script>  
+
+        <script src="javascripts/vendor/jquery.validate.min.js"></script>
+
 
         <script src="javascripts/lightbox/js/lightbox-2.6.min.js"></script>
 
@@ -539,10 +542,10 @@
                                                         PRICE
                                                      </td>
                                                      <td>
-                                                        CC
+                                                        EST CC
                                                      </td>
                                                      <td>
-                                                        TAX
+                                                        EST TAX
                                                      </td>
                                                      <td>
                                                         FLOOR PLAN
@@ -769,61 +772,61 @@
             <div class="head">
                                     Register <hr>
                                 </div>
-                                <form class='custom' style="font-size:10pt;">
+                                <form id= "reg_form" action="/mail_to" method="post" class='custom' style="font-size:10pt;">
                                   <div class="row">
                                       <div class="large-4 columns">
                                           <label for='fname'>First Name*</label>
-                                          <input id='fname' type="text">
+                                          <input name='First Name' id='fname' type="text" required>
                                       </div>
                                       <div class="large-4 columns">
                                           <label for='lname'>Last Name*</label>
-                                          <input id='lname' type="text">
+                                          <input name='Last Name' id='lname' type="text" required>
                                       </div>
                                       <div class="large-4 columns">
                                           <label>Email*</label>
-                                          <input type="text">
+                                          <input id='email' name='Email Address' type="text" required>
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="large-4 columns">
-                                          <label>Zip Code*</label>
-                                          <input type="text">
+                                          <label>Zip Code</label>
+                                          <input name='Zip Code' type="text">
                                       </div>
                                       <div class="large-4 columns">
                                           <label>Phone</label>
-                                          <input type="text">
+                                          <input name='Phone Number' type="text">
                                       </div>
                                       <div class="large-4 columns">
                                           <label>Address</label>
-                                          <input type="text">
+                                          <input name='Address' type="text">
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="large-4 columns">
                                           <label>City</label>
-                                          <input type="text">
+                                          <input name='City' type="text">
                                       </div>
                                       <div class="large-4 columns">
                                           <label>State</label>
-                                          <input type="text">
+                                          <input name='State' type="text">
                                       </div>
                                       <div class="large-4 columns">
                                           <label>Country</label>
-                                          <input type="text">
+                                          <input name='Country' type="text">
                                       </div>
                                   </div>
                                   <div class="row">
                                       <div class="large-3 columns">
                                           <label>WHAT RESIDENCE ARE YOU INTERESED IN?</label>
-                                          <select>
+                                          <select name='Residence'>
                                               <option>Option 1</option>
                                               <option>Option 2</option>
                                               <option>Option 3</option>
                                           </select>
                                       </div>
                                       <div class="large-3 columns">
-                                          <label>WHAT IS YOUR PRICE RANGE?</label>
-                                          <select>
+                                          <label >WHAT IS YOUR PRICE RANGE?</label>
+                                          <select name='Price Range'>
                                               <option>Option 1</option>
                                               <option>Option 2</option>
                                               <option>Option 3</option>
@@ -831,7 +834,7 @@
                                       </div>
                                       <div class="large-3 columns">
                                           <label>HOW DID YOU HEAR ABOUT US?</label>
-                                          <select>
+                                          <select name='Heard About Us Through'>
                                               <option>Option 1</option>
                                               <option>Option 2</option>
                                               <option>Option 3</option>
@@ -839,7 +842,7 @@
                                       </div>
                                       <div class="large-3 columns">
                                           <label>WHAT IS THE MOST IMPORTANT FACTOR?</label>
-                                          <select>
+                                          <select name='Most Important Factor'>
                                               <option>Option 1</option>
                                               <option>Option 2</option>
                                               <option>Option 3</option>
@@ -849,10 +852,13 @@
                                   <div class="row">
                                       <div class="large-6 columns">
                                           <label>COMMENTS</label>
-                                          <textarea></textarea>
+                                          <textarea name='Comments'></textarea>
                                       </div>
-                                      <div class="large-6 columns">
-                                          <input type='submit' value='SUBMIT'>
+                                      <div class="large-6 columns" style="margin-top: 14px;">
+                                      <label for="checkbox1"><input name="Represented By A Broker" type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> ARE YOU REPRESENTED BY A BROKER?</label>
+                                      <label for="checkbox2"><input name="Is A Broker" type="checkbox" id="checkbox2" style="display: none;"><span class="custom checked checkbox"></span> ARE YOU A BROKER?</label>
+                                     
+                                      <input type='submit' value='SUBMIT'>
                                       </div>
                                   </div>
                               </form>
@@ -969,6 +975,11 @@
             <a class="close-reveal-modal"><img src="images/Close.png"></img></a>
           </div>
 
+          <div id="reg_modal" class="reveal-modal expand">
+            Thanks for your message! Someone will be in touch soon.
+            <a class="close-reveal-modal"><img src="images/Close.png"></img></a>
+          </div>
+
 
 
 
@@ -1017,63 +1028,70 @@
         <script>
             $(document).foundation();
             $(document).foundation('reveal', {animation: 'fade', animationSpeed: 600});
-            //$(document).foundation.orbit({animation: 'fade'});
-
+            
 
             $(document).ready(function() {
-                    // intizialize content area from building_html div and enable left/right arrows
-                    var new_contents = $('#building_html').contents();
-                    $(".content-area").append(new_contents);
+                
+                // register form handler
+                $( "#reg_form" ).submit(function(event) {
+                      // Stop form from submitting normally
+                       event.preventDefault();
+                       //ajax request, show modal if form is posted successfully
+                       $.post( "/mail_to", $("#reg_form").serialize(), function(data) {
+                            $('#reg_modal').foundation('reveal', 'open');
+                       });       
+                });
 
-                    $(".content-area > .controls").on('click','img.left_arrow', function(event){
-                      $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
-                    });
+                // intizialize content area from building_html div and enable left/right arrows
+                var new_contents = $('#building_html').contents();
+                $(".content-area").append(new_contents);
+                $(".content-area > .controls").on('click','img.left_arrow', function(event){
+                  $(".content-area > .orbit-container > .orbit-prev").trigger( "click" );
+                });
+                $(".content-area > .controls").on('click','img.right_arrow', function(event){
+                  $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
+                });  
+               
+                //move orbit bullets to after the slideshow arrows
+                //$(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
+                $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > img.cent.white-border"));
 
-                    $(".content-area > .controls").on('click','img.right_arrow', function(event){
-                      $(".content-area > .orbit-container > .orbit-next").trigger( "click" );
-                    });  
-                   
-                    //move orbit bullets to after the slideshow arrows
-                    //$(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > .controls"));
-                    $(".content-area > .orbit-container > .orbit-bullets").insertAfter((".content-area > img.cent.white-border"));
+               //resize orbit-container to fit slideshow contents
+                if ($('.orbit-container ul').height() === 0) {
+                        console.log("height is zero")
+                        $(window).trigger('resize');
+                        //$('.orbit-container ul').height(360);
+                }
 
+                //handlers for sub links
+                $("#rez").click(function(event) {
+                 	  if ($(event.currentTarget).hasClass("opened")){
+                 	    $("#rez_sub").slideUp("slow", function() {
+                 	    	$(event.currentTarget).removeClass("opened");
+                 	    });
+                 	  }
+                 	  else{
+                      $("#rez_sub").slideDown("slow", function() {
+                      	$(event.currentTarget).addClass("opened");
+                      });
+                 	  }
+                });
+                $("#amen").click(function(event) {
+                 	  if ($(event.currentTarget).hasClass("opened")){
+                 	    $("#amen_sub").slideUp("slow", function() {
+                 	    	$(event.currentTarget).removeClass("opened");
+                 	    });
+                 	  }
+                 	  else{
+                      $("#amen_sub").slideDown("slow", function() {
+                      	$(event.currentTarget).addClass("opened");
+                      });
+                 	  }
+                });
 
-                   //resize orbit-container to fit slideshow contents
-                    if ($('.orbit-container ul').height() === 0) {
-                            console.log("height is zero")
-                            $(window).trigger('resize');
-                            //$('.orbit-container ul').height(360);
-                    }
-
-                    //handlers for sub links
-                    $("#rez").click(function(event) {
-                     	  if ($(event.currentTarget).hasClass("opened")){
-                     	    $("#rez_sub").slideUp("slow", function() {
-                     	    	$(event.currentTarget).removeClass("opened");
-                     	    });
-                     	  }
-                     	  else{
-                          $("#rez_sub").slideDown("slow", function() {
-                          	$(event.currentTarget).addClass("opened");
-                          });
-                     	  }
-                    });
-                    $("#amen").click(function(event) {
-                     	  if ($(event.currentTarget).hasClass("opened")){
-                     	    $("#amen_sub").slideUp("slow", function() {
-                     	    	$(event.currentTarget).removeClass("opened");
-                     	    });
-                     	  }
-                     	  else{
-                          $("#amen_sub").slideDown("slow", function() {
-                          	$(event.currentTarget).addClass("opened");
-                          });
-                     	  }
-                    });
-
-                // $("a[data-lightbox]").click(function(e){
-                //     setTimeout(function(){ $("lb-").height($(".content-area").height()+40); },100);
-                //     });
+            // $("a[data-lightbox]").click(function(e){
+            //     setTimeout(function(){ $("lb-").height($(".content-area").height()+40); },100);
+            //     });
 
 
                 //click handler for sidebar links
