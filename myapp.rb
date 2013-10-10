@@ -1,14 +1,40 @@
 #myapp.rb
 require 'sinatra'
+require 'nokogiri'
+require 'pony'
+
+Pony.options = {
+  :to => 'bhaity@gmail.com',
+  :from => 'village.green.west.mailer@gmail.com',
+  :headers => { 'Content-Type' => 'text/html' },
+  :via => :smtp,
+  :via_options => {
+    :address              => 'smtp.gmail.com',
+    :port                 => '587',
+    :enable_starttls_auto => true,
+    :user_name            => 'village.green.west.mailer@gmail.com',
+    :password             => '245w14st',
+    :authentication       => :plain, # :plain, :login, :cram_md5, no auth by default
+    :domain               => "localhost.localdomain" # the HELO domain provided by the client to the server
+  }
+}
 
 get '/' do
-  send_file 'public/index.html'
+	# @doc = Nokogiri::XML(File.read("books.xml"))
+ #  @books = @doc.xpath("//book")
+ #  raise @books.inspect
+  erb :index
 end
 
 get '/mobile' do
-  send_file 'public/mobile.html'
+  erb :mobile
 end
 
 get '/home' do
-  send_file 'public/desktop.html'
+  erb :desktop
+end
+
+post '/mail_to' do
+  Pony.mail :subject => "Village Green West | New Enquiry Received",
+            :body    => erb(:email)
 end
