@@ -1,4 +1,4 @@
-require 'rack_mailer'
+#require 'rack_mailer'
 require './myapp'
 run Sinatra::Application
 
