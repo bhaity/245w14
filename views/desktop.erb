@@ -46,16 +46,20 @@
                     	  <a renders-this="#building_html" class="logo" href="#"><img style="max-width:180px;" class="cent" src="images/Logo.gif"/></a>
                     	  <div class="sidebar" style="padding-left:5px;position:relative;height:100%;">
                     	  	<a renders-this="#building_html" href="#">THE BUILDING</a><br/>
-                    	  	<a renders-this="#rez_html" href="#" id="rez">RESIDENCES</a><br/>
+                    	  	<a href="#" id="rez" class="no-change">RESIDENCES</a><br/>
 	                    	  	<div class="sub" id="rez_sub" style="display:none;">
+                                    <a renders-this="#rez_html" href="#"> › Living </a>
+                                    <br/>
 	                    	  		<a renders-this="#kitchens_html" href="#"> › Kitchens </a>
 	                    	  		<br/>
 	                    	  		<a renders-this="#bathrooms_html" href="#"> › Bathrooms </a>
                                     <br/>
                                     <a renders-this="#penthouses_html" href="#"> › Tower Residences </a><br/>
 	                    	  	</div>
-                    	  	<a renders-this="#amenities_html" href="#" id="amen">AMENITIES</a><br/>
+                    	  	<a href="#" id="amen" class="no-change">AMENITIES</a><br/>
 	                    	  	<div class="sub" id="amen_sub" style="display:none;">
+                                    <a renders-this="#amenities_html" href="#"> › Lobby </a>
+                                    <br/>
 	                    	  		<a renders-this="#better_living_html" href="#"> › Better Living </a>
                                     <br/>
                                     <a renders-this="#open_air_html" href="#"> › Open Air </a>
@@ -134,7 +138,7 @@
 
         <div id="rez_html" style="display:none;">
           <div class="head">
-            Residences <hr>
+            Residences › Living <hr>
           </div>
             <ul data-orbit data-options="timer:false;slide_number:false;bullets:false;animation:'fade';">
                 <li>
@@ -270,7 +274,7 @@
 
         <div id="amenities_html" style="display:none;">
           <div class="head">
-            Amenities <hr>
+            Lobby <hr>
           </div>
           <ul data-orbit data-options="timer:false;slide_number:false;bullets:false;animation:'fade';">
                 <li>
@@ -1073,7 +1077,7 @@
 
 
                 //click handler for sidebar links
-                $(".sidebar a").click(function(event){
+                $(".sidebar a:not(.no-change)").click(function(event){
                     
                     //for hover colors
                     $(".sidebar a").removeClass("chosen");
