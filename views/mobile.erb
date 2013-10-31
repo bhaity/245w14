@@ -340,6 +340,36 @@
                                     development — all in downtown Manhattan. Michael Namer and Alfa Development are continuing with their mission to create
                                     more sustainable living experiences with the developments and residences that comprise the Green Collection.
                                 </p>
+                                <br/>
+                                <img class="white-border" src="images/Team3.jpg" style="max-width:150px;" /><br/>
+                                    <p>
+                                        KUTNICKI BERNSTEIN ARCHITECTS <br/>
+                                        Innovation and inspiration are the defining components of buildings 
+                                        designed by Kutnicki Bernstein Architects. The 30 person firm 
+                                        is composed of studios which explore each project in depth and 
+                                        provides inventive new ways to integrate organizing concepts and 
+                                        iconic design with the programmatic and functional nexus of a 
+                                        building. The creative team led by partners Daniel Bernstein and 
+                                        Lawrence Kutnicki have developed a multifaceted office designing 
+                                        buildings for hospitality, multifamily residential, single family homes, 
+                                        educational and innovative urban planning.
+                                    </p>
+                                <br/>
+                                <img class="white-border" src="images/Team2.jpg" style="max-width:150px;" />
+                                    <img class="white-border" src="images/Team1.jpg" style="max-width:150px;" />
+                                    <br/>
+                                    <p>
+                                        CORCORAN GROUP MARKETING,<br/> EXCLUSIVE SALES & MARKETING<br/> 
+                                        Corcoran Group Marketing is an affiliate of Corcoran Sunshine 
+                                        Marketing Group. With 25 years of experience in marketing and 
+                                        collective sales in excess of $25 billion, Corcoran Sunshine 
+                                        Marketing Group is the recognized industry leader in the planning, 
+                                        design, marketing, and sale of luxury residential development. 
+                                        Representing properties throughout the United States and in select 
+                                        international locations, Corcoran Sunshine Marketing Group’s 
+                                        portfolio contains a curated collection of the world’s most desirable 
+                                        new addresses.
+                                    </p>
                                 <p class="collapse"><b>x</b> close</p>
                             </div>
                         </section>
@@ -434,33 +464,62 @@
                                       <div class="large-3 columns">
                                           <label>WHAT RESIDENCE ARE YOU INTERESED IN?</label>
                                           <select name='Residence'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                              <option></option>
+                                              <option>1 Bedroom</option>
+                                              <option>2 Bedrooms</option>
+                                              <option>3 Bedrooms</option>
+                                              <option>4 Bedrooms</option>
                                           </select>
                                       </div>
                                       <div class="large-3 columns">
                                           <label>WHAT IS YOUR PRICE RANGE?</label>
                                           <select name='Price Range'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                              <option></option>
+                                              <option>$1 - $1.5</option>
+                                              <option>$1.5 - $2</option>
+                                              <option>$2 - $2.5</option>
+                                              <option>$2.5 - $3</option>
+                                              <option>$3 - $3.5</option>
+                                              <option>$3.5 - $4</option>
+                                              <option>$4 - $5</option>
+                                              <option>$5 - $6</option>
+                                              <option>$6 - $7</option>
+                                              <option>$7 - $8</option>
+                                              <option>$8 - $9</option>
+                                              <option>$9+</option>
                                           </select>
                                       </div>
                                       <div class="large-3 columns">
                                           <label>HOW DID YOU HEAR ABOUT US?</label>
                                           <select name='Heard About Us Through'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                              <option></option>
+                                                <option>Art + Auction</option>
+                                                <option>Broker</option>
+                                                <option>Corcoran Website</option>
+                                                <option>Edible Magazine</option>
+                                                <option>Gallery Guide</option>
+                                                <option>Google</option>
+                                                <option>Live in Neighborhood</option>
+                                                <option>New York Magazine</option>
+                                                <option>New York Post</option>
+                                                <option>New York Times</option>
+                                                <option>Other</option>
+                                                <option>Press</option>
+                                                <option>Referral</option>
+                                                <option>Signage</option>
+                                                <option>Wall Street Journal</option>
                                           </select>
                                       </div>
                                       <div class="large-3 columns">
                                           <label>WHAT IS THE MOST IMPORTANT FACTOR?</label>
                                           <select name='Most Important Factor'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                              <option></option>
+                                                <option>Location / Neighborhood</option>
+                                                <option>Fitness / Wellness Amenities</option>
+                                                <option>Interior Design and Finishes</option>
+                                                <option>LEED Certification Level</option>
+                                                <option>Price / Price Per Sq Ft</option>
+                                                <option>Other</option>
                                           </select>
                                       </div>
                                   </div>
@@ -555,8 +614,10 @@
                        event.preventDefault();
                        //ajax request, show modal if form is posted successfully
                        $.post( "/mail_to", $("#reg_form").serialize(), function(data) {
-                            alert("Thanks for you enquiry! Someone will get back to you soon.")
-                       });       
+                            alert("Thanks for you enquiry! Someone will get back to you soon.");
+                       }).fail(function() {
+                            alert("Oops! Looks like we had trouble sending you a confirmation email. Please Check your email address and try again.");
+                       });        
                 });
 
 
