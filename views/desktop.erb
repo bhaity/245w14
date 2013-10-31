@@ -862,33 +862,62 @@
                                       <div class="large-3 columns">
                                           <label>WHAT RESIDENCE ARE YOU INTERESED IN?</label>
                                           <select name='Residence'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                              <option></option>
+                                              <option>1 Bedroom</option>
+                                              <option>2 Bedrooms</option>
+                                              <option>3 Bedrooms</option>
+                                              <option>4 Bedrooms</option>
                                           </select>
                                       </div>
                                       <div class="large-3 columns">
                                           <label >WHAT IS YOUR PRICE RANGE?</label>
                                           <select name='Price Range'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                              <option></option>
+                                              <option>$1 - $1.5</option>
+                                              <option>$1.5 - $2</option>
+                                              <option>$2 - $2.5</option>
+                                              <option>$2.5 - $3</option>
+                                              <option>$3 - $3.5</option>
+                                              <option>$3.5 - $4</option>
+                                              <option>$4 - $5</option>
+                                              <option>$5 - $6</option>
+                                              <option>$6 - $7</option>
+                                              <option>$7 - $8</option>
+                                              <option>$8 - $9</option>
+                                              <option>$9+</option>
                                           </select>
                                       </div>
                                       <div class="large-3 columns">
                                           <label>HOW DID YOU HEAR ABOUT US?</label>
                                           <select name='Heard About Us Through'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
-                                          </select>
+                                                <option></option>
+                                                <option>Art + Auction</option>
+                                                <option>Broker</option>
+                                                <option>Corcoran Website</option>
+                                                <option>Edible Magazine</option>
+                                                <option>Gallery Guide</option>
+                                                <option>Google</option>
+                                                <option>Live in Neighborhood</option>
+                                                <option>New York Magazine</option>
+                                                <option>New York Post</option>
+                                                <option>New York Times</option>
+                                                <option>Other</option>
+                                                <option>Press</option>
+                                                <option>Referral</option>
+                                                <option>Signage</option>
+                                                <option>Wall Street Journal</option>
+                                            </select>                                        
                                       </div>
                                       <div class="large-3 columns">
                                           <label>WHAT IS THE MOST IMPORTANT FACTOR?</label>
                                           <select name='Most Important Factor'>
-                                              <option>Option 1</option>
-                                              <option>Option 2</option>
-                                              <option>Option 3</option>
+                                                <option></option>
+                                                <option>Location / Neighborhood</option>
+                                                <option>Fitness / Wellness Amenities</option>
+                                                <option>Interior Design and Finishes</option>
+                                                <option>LEED Certification Level</option>
+                                                <option>Price / Price Per Sq Ft</option>
+                                                <option>Other</option>
                                           </select>
                                       </div>
                                   </div>
@@ -1014,6 +1043,10 @@
             Thanks for your message! Someone will be in touch soon.
             <a class="close-reveal-modal"><img src="images/Close.png"></img></a>
           </div>
+          <div id="reg_error_modal" class="reveal-modal medium">
+            Oops! Looks like we had trouble sending you a confirmation email.<br/> Please check your email address and try again.
+            <a class="close-reveal-modal"><img src="images/Close.png"></img></a>
+          </div>
 
 
 
@@ -1074,6 +1107,8 @@
                        //ajax request, show modal if form is posted successfully
                        $.post( "/mail_to", $("#reg_form").serialize(), function(data) {
                             $('#reg_modal').foundation('reveal', 'open');
+                       }).fail(function() {
+                            $('#reg_error_modal').foundation('reveal', 'open');
                        });       
                 });
 
