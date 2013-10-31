@@ -50,6 +50,10 @@ body p, ul, table{
 
 }
 
+.map-list{
+    padding-left:10px;
+}
+
 .nav-font{
     font-family: 'museo700';
     font-weight: bold;
