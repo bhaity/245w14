@@ -45,7 +45,7 @@
                     	<div class="small-3 columns" style="padding-top:20px;padding-right:0px;padding-left:20px;">
                     	  <a renders-this="#building_html" class="logo" href="#"><img style="max-width:180px;" class="cent" src="images/Logo.gif"/></a>
                     	  <div class="sidebar" style="padding-left:5px;position:relative;height:100%;">
-                    	  	<a renders-this="#building_html" href="#">THE BUILDING</a><br/>
+                    	  	<a id="building-link" renders-this="#building_html" href="#">THE BUILDING</a><br/>
                     	  	<a href="#" id="rez" class="no-change">RESIDENCES</a><br/>
 	                    	  	<div class="sub" id="rez_sub" style="display:none;">
                                     <a renders-this="#rez_html" href="#"> › Living </a>
@@ -524,7 +524,7 @@
                                 </ul>-->
 
                                 
-                                    For availability <a href="http://www.corcoran.com/nyc/NewDevelopments/Display/582"> click here. </a>
+                                    For availability <a target="_blank" href="http://www.corcoran.com/nyc/NewDevelopments/Display/582"> click here. </a>
                                 
 
  <!--                                      <br/>
@@ -725,7 +725,7 @@
                                     Contact <hr>
                                 </div>
                                <p style="text-align:center;">
-                                <img class="cent white-border" src='images/Residences.jpg'/><br/>
+                                <img class="cent white-border" src='images/contact.jpg'/><br/>
                                </p>
                                 <h4>VILLAGE GREEN WEST SALES GALLERY</h4>
                             <p style="font-size:10pt;">
@@ -826,8 +826,8 @@
                                           <textarea name='Comments'></textarea>
                                       </div>
                                       <div class="large-6 columns" style="margin-top: 14px;">
-                                      <label for="checkbox1"><input name="Represented By A Broker" type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> ARE YOU REPRESENTED BY A BROKER?</label>
-                                      <label for="checkbox2"><input name="Is A Broker" type="checkbox" id="checkbox2" style="display: none;"><span class="custom checked checkbox"></span> ARE YOU A BROKER?</label>
+                                      <label for="checkbox1"><input name="Represented By A Broker" type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> ARE YOU REPRESENTED BY A BROKER? *</label>
+                                      <label for="checkbox2"><input name="Is A Broker" type="checkbox" id="checkbox2" style="display: none;"><span class="custom checked checkbox"></span> ARE YOU A BROKER? *</label>
                                      
                                       <input type='submit' value='SUBMIT'>
                                       </div>
@@ -840,16 +840,13 @@
                                     Legal <hr>
                                 </div>
                             <p> 
-                                THE COMPLETE OFFERING TERMS ARE IN AN OFFERING PLAN AVAILABLE FROM THE SPONSOR. FILE NO. CD11-0177. SPONSOR:
-                                FIRST WEST 21ST STREET LLC 15 WEST 18TH STREET SUITE 200 NEW YORK, NEW YORK 10011.
+                                THE COMPLETE OFFERING TERMS ARE IN AN OFFERING PLAN AVAILABLE FROM THE SPONSOR. File# CD13-0035  SPONSOR: FIRST 14TH LLC 15 WEST 18TH STREET SUITE 200 NEW YORK, NEW YORK 10011.
                             </p>
                             <p>
-                                The exact finishes and dimensions may vary in accordance with terms outlined in the offering plan. Actual layouts may vary - please consult
-                                the floor plans and offering plan for representative dimensions and layouts of each specific unit.
+                                The exact finishes and dimensions may vary in accordance with terms outlined in the offering plan. Actual layouts may vary - please consult the floor plans and offering plan for representative dimensions and layouts of each specific unit.
                             </p>
                             <p>
-                                All dimensions are approximate and subject to normal construction variances and tolerances. We reserve the right to make changes due
-                                to unforeseen conditions and in accordance with the offering plan. For exact measurements you must hire our own architect or engineer.
+                                All dimensions are approximate and subject to normal construction variances and tolerances. We reserve the right to make changes due to unforeseen conditions and in accordance with the offering plan. For exact measurements you must hire our own architect or engineer.
                             </p>
                             <img class="cent white-border" src='images/small-logo.gif' />
                             </div>
@@ -1022,7 +1019,7 @@
                       
                     // });
                 });
-            
+
 
                 // intizialize content area from building_html div and enable left/right arrows
                 var new_contents = $('#building_html').contents();
@@ -1071,13 +1068,22 @@
                  	  }
                 });
 
+                $(".logo, #building-link").click(function(){
+                  $("#pan").stop();
+                  $("#pan").css("top", "0");  
+                  $("#pan").animate({
+                    top: "-389px"
+                    }, 10000, 'swing', function() {
+                  });
+                })
+
             // $("a[data-lightbox]").click(function(e){
             //     setTimeout(function(){ $("lb-").height($(".content-area").height()+40); },100);
             //     });
 
 
                 //click handler for sidebar links
-                $(".sidebar a:not(.no-change)").click(function(event){
+                $(".sidebar a:not(.no-change), .logo").click(function(event){
                     
                     //for hover colors
                     $(".sidebar a").removeClass("chosen");
