@@ -50,6 +50,12 @@ body p, ul, table{
 
 }
 
+.nav-font{
+    font-family: 'museo700';
+    font-weight: bold;
+    font-size: 16px;
+}
+
 table tr td a {
     display:block;
     height:100%;
