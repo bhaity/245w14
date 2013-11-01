@@ -55,8 +55,8 @@ body p, ul, table{
 }
 
 .nav-font{
-    font-family: 'museo700';
-    font-weight: bold;
+    font-family: 'museo300';
+    //font-weight: bold;
     font-size: 16px;
 }
 
@@ -329,6 +329,17 @@ section p:not(.title) {
          url('webfontkit/museo700-regular-webfont.woff') format('woff'),
          url('webfontkit/museo700-regular-webfont.ttf') format('truetype'),
          url('webfontkit/museo700-regular-webfont.svg#museo700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo300';
+    src: url('webfontkit300/museo300-regular-webfont-webfont.eot');
+    src: url('webfontkit300/museo300-regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit300/museo300-regular-webfont-webfont.woff') format('woff'),
+         url('webfontkit300/museo300-regular-webfont-webfont.ttf') format('truetype'),
+         url('webfontkit300/museo300-regular-webfont-webfont.svg#museo700') format('svg');
     font-weight: normal;
     font-style: normal;
 }
