@@ -137,6 +137,10 @@ table.availabilities_table tr:nth-of-type(even) {
     display:inline-block; 
     text-align:left;
 }
+
+.press-span a{
+    color:black;
+}
 .accordion.map-accordion{
     border:0;
 }
