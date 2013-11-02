@@ -37,5 +37,5 @@ post '/mail_to' do
   Pony.mail :subject => "Village Green West | New Inquiry Received",
             :body    => erb(:email),
             :to => params["Email Address"],
-            :cc => 'bhaity@gmail.com'
+            :bcc => 'info@245w14.com'
 end
