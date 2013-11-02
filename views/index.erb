@@ -1,5 +1,7 @@
 <!DOCTYPE html>
     <head>
+
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Located at 245 West 14th Street between Seventh and Eighth Avenues. Village Green West combines the modern, sustainable living environment with a design aesthetic reminiscent of the 19th century industrial era.">
@@ -18,6 +20,16 @@
          <script src="javascripts/lightbox/js/jquery-1.10.2.min.js"></script>
 
         <script src="javascripts/lightbox/js/lightbox-2.6.min.js"></script>
+
+        <script>
+            if (($(window).width() < 500) && (document.location.pathname == '/')) {
+              document.location = "/mobile";
+            }
+
+            if (($(window).width() > 500) && ($(window).width() < 900) && (document.location.pathname == '/')) {
+              document.location = "/home";
+            }
+        </script>
     </head>
     <body style="height:800px;">
     
@@ -71,14 +83,6 @@
     <script>
 
         $(document).ready(function() {
-            if (($(window).width() < 500) && (document.location.pathname == '/')) {
-              document.location = "/mobile";
-            }
-
-            if (($(window).width() > 500) && ($(window).width() < 900) && (document.location.pathname == '/')) {
-              document.location = "/home";
-            }
-
 
         jQuery.fn.center = function () {
           this.css("position","absolute");
