@@ -72,6 +72,6 @@ class Protected < Sinatra::Base
     username == 'alfa' && password == 'alfamgmt1'
   end
   get '/csv' do
-    send_file("245registrations.csv")
+    send_file("245registrations.csv", filename: '245registrations.csv')
   end
 end
