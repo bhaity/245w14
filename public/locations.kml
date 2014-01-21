@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>Locations for VILLAGE GREEN WEST SALES GALLERY.</name>
+		<atom:link rel="related" href="http://www.245w14.com" />
+		<Folder>
+			<Placemark>
+				<name><![CDATA[VILLAGE GREEN WEST SALES GALLERY]]></name>
+				<address><![CDATA[ 130 West 18th St., New York, NY, 10011, United States]]></address>
+				<description><![CDATA[]]></description>
+				<Point>
+					<coordinates>-73.9964679,40.740228,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Document>
+</kml>
