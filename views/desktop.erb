@@ -1175,7 +1175,7 @@
             $(document).ready(function() {
 
                 //handle when users hit refresh and URL has a hash
-                $(location.hash).trigger('click');
+                setTimeout(function(){$(location.hash).trigger('click');}, 250);
 
                 // register form handler
                 $( "#reg_form" ).submit(function(event) {
