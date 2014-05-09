@@ -61,10 +61,10 @@
 	                    	  	</div>
                     	  	<a renders-this="#neigh_html" href="#" id="neigh">NEIGHBORHOOD</a><br/>
                     	  	<a renders-this="#map_html" href="#" id ="map">MAP</a><br/><br/>
-                    	  	<a renders-this="#avail_html" href="#">AVAILABILITY</a><br/>
-                    	  	<a renders-this="#facts_html" href="#">FACT SHEET</a><br/>
-                    	  	<a renders-this="#team_html" href="#">TEAM</a><br/>
-                    	  	<a renders-this="#press_html" href="#">PRESS</a><br/>
+                    	  	<a renders-this="#avail_html" href="#" id="availability">AVAILABILITY</a><br/>
+                    	  	<a renders-this="#facts_html" href="#" id="factsheet">FACT SHEET</a><br/>
+                    	  	<a renders-this="#team_html" href="#" id="team">TEAM</a><br/>
+                    	  	<a renders-this="#press_html" href="#" id="press">PRESS</a><br/>
                             <br/>
                     	  	<a renders-this="#contact_html" href="#">Contact</a><br/>
                     	  	<a renders-this="#register_html" href="#">Register</a><br/>
@@ -1064,7 +1064,7 @@
                 }
 
                 //handlers for sub links
-                $("#rez").click(function(event) {
+                $("#residences").click(function(event) {
                  	  if ($(event.currentTarget).hasClass("opened")){
                  	    $("#rez_sub").slideUp("slow", function() {
                  	    	$(event.currentTarget).removeClass("opened");
@@ -1076,7 +1076,7 @@
                       });
                  	  }
                 });
-                $("#amen").click(function(event) {
+                $("#amenities").click(function(event) {
                  	  if ($(event.currentTarget).hasClass("opened")){
                  	    $("#amen_sub").slideUp("slow", function() {
                  	    	$(event.currentTarget).removeClass("opened");
@@ -1093,10 +1093,8 @@
             //     setTimeout(function(){ $("lb-").height($(".content-area").height()+40); },100);
             //     });
 
-
                 //click handler for sidebar links
                 $(".sidebar a").click(function(event){
-                    
                     //for hover colors
                     $(".sidebar a").removeClass("chosen");
                 	$(event.currentTarget).toggleClass("chosen");
@@ -1118,7 +1116,6 @@
 
                     //resize everything div to fit contents (why doesnt this shrink?)
                     //setTimeout(function(){ $(".everything").height($(".content-area").height()+40); },100);
-
 
                     //collapse on click for map accordion
                     $(".map-accordion").on('click', 'a.close-accordion-hack', function(event){
@@ -1150,9 +1147,11 @@
                 $('.sidebar a, .logo').on('click', function() {
                     setTimeout(function() {
                         if ($('.orbit-container ul').height() === 0) {
-                            console.log("height is zero")
+                            console.log("height is zero");
                             $(window).trigger('resize');
                             //$('.orbit-container ul').height(360);
+
+                            console.log('asdfasdf');
                         }
                     }, 1);
                 });
