@@ -36,6 +36,10 @@ class Public < Sinatra::Base
     erb :desktop
   end
 
+  get '/animation_demo' do
+    erb :expandable
+  end
+
   post '/mail_to' do
     Pony.mail :subject => "Village Green West | New Inquiry Received",
               :body    => erb(:email),
