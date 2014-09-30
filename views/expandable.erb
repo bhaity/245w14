@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script type="text/javascript">
+	//Flash dimensions (900x60)=>(900pxx300)
+	function expand() {
+		document.getElementById("exp-banner").style.clip="rect(0px 900px 300px 0px)";
+	}
+	function retract() {
+		document.getElementById("exp-banner").style.clip="rect(0px 900px 60px 0px)";
+	}
+</script>
+<style>
+
+body {background: #212121; font-family: Sans-Serif; color: white; width: 800px; text-align: justify}
+a {color: #fff}
+</style>
+</head>
+
+<body>
+
+<div style="position: relative; width: 900px; height: 60px">
+    <div id="exp-banner" style=" position:absolute;clip: rect(0px 900px 60px 0px)">
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="900" height="300" id="900x300" align="middle">
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="allowFullScreen" value="false" />
+        <param name="movie" value="900x300.swf" /><param name="quality" value="high" /><param name="wmode" value="transparent" /><param name="bgcolor" value="#ffffff" />	<embed src="images/900x300.swf" quality="high" wmode="transparent" bgcolor="#ffffff" width="900" height="300" name="900x300" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+      </object>
+    </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+
+</body>
+</html>
